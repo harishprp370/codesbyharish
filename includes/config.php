@@ -3,9 +3,9 @@
 
 // --- Database Configuration ---
 $dbHost = 'localhost'; // Or your database host
-$dbName = 'u829661811_code';
-$dbUser = 'u829661811_codes';
-$dbPass = 'd2Z~!7H|k';
+$dbName = 'test';
+$dbUser = 'test';
+$dbPass = 'test';
 $dbCharset = 'utf8mb4';
 
 // Data Source Name (DSN)
