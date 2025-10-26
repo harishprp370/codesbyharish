@@ -1,496 +1,1282 @@
-<?php
-include 'includes/config.php';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codes By Harish - Coming Soon</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/107/107831.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<?php include 'includes/header.php'; ?>
 
-        body {
-            font-family: 'Rajdhani', sans-serif;
-            background: #0a0a0a;
-            overflow-x: hidden;
-            height: 100vh;
-            position: relative;
-        }
+<!-- Main Content -->
+<main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-title">
+                        <span class="name-highlight">Harish</span>
+                        <span class="typing-text"></span>
+                    </h1>
+                    <p class="hero-description">
+                        Full-stack developer and cybersecurity specialist crafting secure, 
+                        scalable digital solutions. Expert in modern web technologies, 
+                        cloud platforms, and enterprise security frameworks.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="projects.php" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View My Work
+                        </a>
+                        <a href="contact.php" class="btn btn-outline">
+                            <i class="fas fa-comments"></i>
+                            Let's Talk
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="floating-elements">
+                            <div class="float-item" data-tech="PHP">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="float-item" data-tech="Python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="float-item" data-tech="Security">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="float-item" data-tech="Cloud">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        /* Animated Background */
-        .bg-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            background: radial-gradient(ellipse at center, #1a1a2e 0%, #16213e 35%, #0f0f23 100%);
-        }
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I Do</span>
+                <h2 class="section-title">My Expertise</h2>
+                <p class="section-description">
+                    Specialized in creating secure, scalable, and modern digital solutions
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Software Development</h3>
+                    <p class="service-description">
+                        Custom software solutions using Python, PHP, and modern frameworks. 
+                        From web applications to enterprise systems.
+                    </p>
+                    <ul class="service-features">
+                        <li>Full-stack web applications</li>
+                        <li>API development & integration</li>
+                        <li>Database design & optimization</li>
+                    </ul>
+                </div>
 
-        /* Abstract Shapes */
-        .shape {
-            position: absolute;
-            opacity: 0.1;
-            animation: float 6s ease-in-out infinite alternate;
-        }
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Cybersecurity</h3>
+                    <p class="service-description">
+                        Comprehensive security solutions including vulnerability assessments, 
+                        penetration testing, and security architecture design.
+                    </p>
+                    <ul class="service-features">
+                        <li>Security audits & assessments</li>
+                        <li>IAM implementation</li>
+                        <li>SOC analysis & monitoring</li>
+                    </ul>
+                </div>
 
-        .shape:nth-child(1) {
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(45deg, #ff0066, #0066ff);
-            border-radius: 50%;
-            top: 10%;
-            left: 80%;
-            animation-delay: 0s;
-        }
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile Development</h3>
+                    <p class="service-description">
+                        Cross-platform mobile applications with native performance 
+                        and seamless user experience.
+                    </p>
+                    <ul class="service-features">
+                        <li>iOS & Android apps</li>
+                        <li>Progressive web apps</li>
+                        <li>App store optimization</li>
+                    </ul>
+                </div>
 
-        .shape:nth-child(2) {
-            width: 200px;
-            height: 200px;
-            background: linear-gradient(135deg, #0066ff, #ff0066);
-            transform: rotate(45deg);
-            top: 60%;
-            left: 10%;
-            animation-delay: 2s;
-        }
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="service-title">Cloud Solutions</h3>
+                    <p class="service-description">
+                        Scalable cloud infrastructure on Google Cloud Platform 
+                        with automated deployment and monitoring.
+                    </p>
+                    <ul class="service-features">
+                        <li>Cloud migration & hosting</li>
+                        <li>DevOps & CI/CD pipelines</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                </div>
 
-        .shape:nth-child(3) {
-            width: 150px;
-            height: 150px;
-            background: linear-gradient(90deg, #ff0066, #000);
-            border-radius: 20px;
-            top: 30%;
-            left: 15%;
-            animation-delay: 4s;
-        }
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">SEO & Analytics</h3>
+                    <p class="service-description">
+                        Search engine optimization and web analytics to maximize 
+                        online visibility and performance.
+                    </p>
+                    <ul class="service-features">
+                        <li>Technical SEO audit</li>
+                        <li>Google Analytics setup</li>
+                        <li>Performance monitoring</li>
+                    </ul>
+                </div>
 
-        @keyframes float {
-            0% { transform: translateY(0px) rotate(0deg); }
-            100% { transform: translateY(-20px) rotate(10deg); }
-        }
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">SaaS Applications</h3>
+                    <p class="service-description">
+                        End-to-end SaaS platform development with subscription 
+                        management, analytics, and scalable architecture.
+                    </p>
+                    <ul class="service-features">
+                        <li>Multi-tenant architecture</li>
+                        <li>Payment integration</li>
+                        <li>User management systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        /* Abstract Lines with LED Points */
-        .led-lines {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 3;
-            pointer-events: none;
-        }
+    <!-- Tech Stack Section -->
+    <section class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Technology Stack</span>
+                <h2 class="section-title">Tools & Technologies</h2>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
 
-        .led-line {
-            position: absolute;
-            background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.6), transparent);
-            height: 1px;
-        }
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-laravel"></i>
+                            <span>Laravel</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
 
-        .led-line:nth-child(1) {
-            width: 300px;
-            top: 20%;
-            left: 10%;
-            transform: rotate(15deg);
-            animation: ledMove1 8s linear infinite;
-        }
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Cloud & DevOps</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
 
-        .led-line:nth-child(2) {
-            width: 400px;
-            top: 60%;
-            right: 10%;
-            transform: rotate(-20deg);
-            animation: ledMove2 12s linear infinite;
-        }
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Security</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>OWASP</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Burp Suite</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-user-shield"></i>
+                            <span>IAM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        .led-line:nth-child(3) {
-            width: 250px;
-            top: 40%;
-            left: 50%;
-            transform: rotate(45deg);
-            animation: ledMove3 10s linear infinite;
-        }
+    <!-- Recent Work Section -->
+    <section class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Some of my recent work showcasing different technologies and solutions
+                </p>
+            </div>
+            <div class="projects-preview">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">EliteArtsss E-commerce</h3>
+                        <p class="project-description">
+                            Luxury jewelry shopping platform with Razorpay integration and real-time shipping
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
 
-        .led-point {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: #0066ff;
-            border-radius: 50%;
-            box-shadow: 0 0 8px #0066ff;
-            animation: pointMove 6s ease-in-out infinite;
-        }
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">QwickLearn Platform</h3>
+                        <p class="project-description">
+                            Online learning management system with interactive content and progress tracking
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
 
-        @keyframes ledMove1 {
-            0% { transform: translateX(-100px) rotate(15deg); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateX(100vw) rotate(15deg); opacity: 0; }
-        }
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">School Management System</h3>
+                        <p class="project-description">
+                            Complete school website with admin panel and student management features
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="projects.php" class="btn btn-outline-large">
+                    <i class="fas fa-folder-open"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
 
-        @keyframes ledMove2 {
-            0% { transform: translateX(100px) rotate(-20deg); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateX(-100vw) rotate(-20deg); opacity: 0; }
-        }
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Credentials</span>
+                <h2 class="section-title">Certifications & Training</h2>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Tata Group Cybersecurity</h3>
+                        <p class="cert-issuer">Tata Group via Forage</p>
+                        <span class="cert-date">Feb 2024</span>
+                    </div>
+                </div>
 
-        @keyframes ledMove3 {
-            0% { transform: translateY(-50px) rotate(45deg); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(100vh) rotate(45deg); opacity: 0; }
-        }
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">AI for India 2.0</h3>
+                        <p class="cert-issuer">HCL GUVI</p>
+                        <span class="cert-date">Aug 2023</span>
+                    </div>
+                </div>
 
-        @keyframes pointMove {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.5); }
-        }
-        .grid-lines {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            opacity: 0.1;
-            background-image: 
-                linear-gradient(rgba(0, 102, 255, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 0, 102, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: gridMove 20s linear infinite;
-        }
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">Bash Scripting & jq</h3>
+                        <p class="cert-issuer">EC-Council</p>
+                        <span class="cert-date">Sep 2023</span>
+                    </div>
+                </div>
 
-        @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
-        }
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">MITRE ATT&CK Defender</h3>
+                        <p class="cert-issuer">Cybrary</p>
+                        <span class="cert-date">Sep 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        /* Main Container */
-        .container {
-            position: relative;
-            z-index: 10;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Build Something Amazing?</h2>
+                <p class="cta-description">
+                    Let's collaborate on your next project. Whether you need secure web applications, 
+                    cybersecurity solutions, or cloud infrastructure, I'm here to help.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.php" class="btn btn-primary-large">
+                        <i class="fas fa-rocket"></i>
+                        Start a Project
+                    </a>
+                    <a href="about.php" class="btn btn-outline-large">
+                        <i class="fas fa-user"></i>
+                        Learn More About Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-        .main-title {
-            font-family: 'Orbitron', monospace;
-            font-size: clamp(3rem, 8vw, 8rem);
-            font-weight: 900;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
+<style>
+    /* Main Content Spacing */
+    .main-content {
+        margin-top: 70px;
+    }
 
-        /* LED Border */
-        .led-border {
-            border: 2px solid #0066ff;
-            padding: 40px;
-            margin: 40px 0;
-            position: relative;
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(10px);
-            box-shadow: 
-                0 0 20px #0066ff,
-                inset 0 0 20px rgba(0, 102, 255, 0.1);
-            animation: ledGlow 2s ease-in-out infinite alternate;
-            transition: transform 0.2s ease-out; /* For parallax */
-        }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
 
-        @keyframes ledGlow {
-            0% { 
-                box-shadow: 
-                    0 0 20px rgba(0, 102, 255, 0.3),
-                    inset 0 0 20px rgba(0, 102, 255, 0.1);
-            }
-            100% { 
-                box-shadow: 
-                    0 0 30px rgba(0, 102, 255, 0.5),
-                    inset 0 0 25px rgba(0, 102, 255, 0.15);
-            }
-        }
+    /* Hero Section */
+    .hero-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        overflow: hidden;
+    }
 
-        /* Subtitle */
-        .subtitle {
-            font-size: clamp(1.2rem, 3vw, 2rem);
-            color: #00ffff;
-            font-weight: 300;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            animation: neonFlicker 3s ease-in-out infinite;
-        }
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
+        pointer-events: none;
+    }
 
-        @keyframes neonFlicker {
-            0%, 100% { text-shadow: 0 0 5px rgba(0, 255, 255, 0.8); }
-            50% { text-shadow: 0 0 8px rgba(0, 255, 255, 0.6); }
-        }
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 2;
+    }
 
-        /* Description */
-        .description {
-            font-size: clamp(1rem, 2vw, 1.4rem);
-            color: #ccc;
-            max-width: 600px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            font-weight: 300;
-        }
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
 
-        /* Progress Bar */
-        .progress-container {
-            width: 100%;
-            max-width: 500px;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 2px;
-            overflow: hidden;
-            position: relative;
-            margin: 40px 0;
-        }
+    .hero-greeting {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 1rem;
+        animation: fadeInUp 0.6s ease-out;
+    }
 
-        .progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, #ff0066, #0066ff, #00ffff);
-            width: 0%;
-            border-radius: 2px;
-            animation: progressLoad 4s ease-in-out infinite;
-            box-shadow: 0 0 10px rgba(0, 102, 255, 0.5);
-        }
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        animation: fadeInUp 0.6s ease-out 0.2s both;
+    }
 
-        @keyframes progressLoad {
-            0% { width: 0%; }
-            50% { width: 75%; }
-            100% { width: 100%; }
-        }
+    .name-highlight {
+        color: var(--primary-color);
+        display: block;
+    }
 
-        /* Social Links */
-        .social-links {
-            display: flex;
-            gap: 20px;
-            margin-top: 40px;
-        }
+    .typing-text::after {
+        content: '';
+        border-right: 2px solid var(--primary-color);
+        animation: blink 1s infinite;
+    }
 
-        .social-link {
-            width: 50px;
-            height: 50px;
-            border: 2px solid #0066ff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #0066ff;
-            text-decoration: none;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            background: rgba(0, 0, 0, 0.5);
-        }
+    @keyframes blink {
+        0%, 50% { border-color: var(--primary-color); }
+        51%, 100% { border-color: transparent; }
+    }
 
-        .social-link:hover {
-            background: #0066ff;
-            color: #000;
-            box-shadow: 0 0 20px #0066ff;
-            transform: scale(1.1);
-        }
+    .hero-description {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        animation: fadeInUp 0.6s ease-out 0.4s both;
+    }
 
-        /* Loading Animation */
-        .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: fadeOut 3s ease-in-out forwards;
-        }
+    .hero-stats {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+        animation: fadeInUp 0.6s ease-out 0.6s both;
+    }
 
-        .loading-text {
-            font-family: 'Orbitron', monospace;
-            font-size: 2rem;
-            color: #0066ff;
-            animation: loadingPulse 1s ease-in-out infinite;
-        }
+    .stat-item {
+        text-align: center;
+    }
 
-        @keyframes loadingPulse {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
-        }
-        
-        /* Styles for load animation */
-        .led-border > * {
+    .stat-number {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        animation: fadeInUp 0.6s ease-out 0.8s both;
+    }
+
+    /* Button Styles */
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: var(--transition);
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: var(--secondary-color);
+        transform: translateY(-2px);
+    }
+
+    .btn-outline {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+
+    .btn-outline:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .btn-outline-large, .btn-primary-large {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-primary-large {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .btn-primary-large:hover {
+        background: var(--secondary-color);
+        transform: translateY(-2px);
+    }
+
+    .btn-outline-large {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+
+    .btn-outline-large:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    /* Hero Image */
+    .hero-image {
+        position: relative;
+        height: 500px;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .floating-elements {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .float-item {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        animation: float 6s ease-in-out infinite;
+        backdrop-filter: blur(10px);
+    }
+
+    .float-item:nth-child(1) {
+        top: 20%;
+        left: 15%;
+        animation-delay: -0.5s;
+    }
+
+    .float-item:nth-child(2) {
+        top: 60%;
+        left: 70%;
+        animation-delay: -2s;
+    }
+
+    .float-item:nth-child(3) {
+        top: 30%;
+        right: 20%;
+        animation-delay: -3.5s;
+    }
+
+    .float-item:nth-child(4) {
+        bottom: 25%;
+        left: 25%;
+        animation-delay: -1s;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+
+    .scroll-indicator {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: var(--text-secondary);
+        animation: fadeInUp 0.6s ease-out 1s both;
+    }
+
+    .scroll-arrow {
+        margin-top: 0.5rem;
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-10px); }
+        60% { transform: translateY(-5px); }
+    }
+
+    /* Section Styles */
+    .services-section,
+    .tech-section,
+    .work-section,
+    .certifications-section {
+        padding: 5rem 0;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .section-subtitle {
+        color: var(--primary-color);
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .section-description {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-card {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 2rem;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.05), transparent);
+        transition: var(--transition);
+    }
+
+    .service-card:hover::before {
+        left: 100%;
+    }
+
+    .service-card:hover {
+        border-color: var(--primary-color);
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--primary-color);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .service-description {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .service-features li {
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    .service-features li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    /* Tech Section */
+    .tech-section {
+        background: var(--bg-secondary);
+    }
+
+    .tech-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .tech-category-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: var(--text-primary);
+        text-align: center;
+    }
+
+    .tech-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .tech-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        transition: var(--transition);
+    }
+
+    .tech-item:hover {
+        border-color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    .tech-item i {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    .tech-item span {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        font-weight: 500;
+    }
+
+    /* Projects Section */
+    .projects-preview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .project-card {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
+
+    .project-image {
+        height: 200px;
+        background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        position: relative;
+        overflow: hidden;
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+
+    .project-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .project-link {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    .project-link:hover {
+        transform: scale(1.1);
+    }
+
+    .project-info {
+        padding: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: var(--text-primary);
+    }
+
+    .project-description {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .project-tech {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .tech-tag {
+        padding: 0.25rem 0.75rem;
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+    }
+
+    .projects-cta {
+        text-align: center;
+    }
+
+    /* Certifications */
+    .certifications-section {
+        background: var(--bg-secondary);
+    }
+
+    .certifications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .cert-card {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: var(--transition);
+    }
+
+    .cert-card:hover {
+        border-color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    .cert-logo {
+        width: 50px;
+        height: 50px;
+        background: var(--primary-color);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .cert-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: var(--text-primary);
+    }
+
+    .cert-issuer {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.25rem;
+    }
+
+    .cert-date {
+        font-size: 0.8rem;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 5rem 0;
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        color: white;
+        text-align: center;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .cta-description {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.9;
+        line-height: 1.6;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cta-section .btn-primary-large {
+        background: white;
+        color: var(--primary-color);
+    }
+
+    .cta-section .btn-primary-large:hover {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(-2px);
+    }
+
+    .cta-section .btn-outline-large {
+        border-color: white;
+        color: white;
+    }
+
+    .cta-section .btn-outline-large:hover {
+        background: white;
+        color: var(--primary-color);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+        from {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .hero-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 2rem;
         }
 
-        @keyframes fadeOut {
-            0% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { opacity: 0; visibility: hidden; }
+        .hero-title {
+            font-size: 3rem;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .led-border {
-                padding: 20px;
-                margin: 20px 0;
+        .hero-stats {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .hero-stats {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .tech-categories {
+            grid-template-columns: 1fr;
+        }
+
+        .hero-buttons {
+            justify-content: center;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+        }
+
+        .service-card,
+        .project-card {
+            margin: 0 0.5rem;
+        }
+    }
+</style>
+
+<script>
+    // Typing animation
+    const typingText = document.querySelector('.typing-text');
+    const words = ['Full-Stack Developer', 'Cybersecurity Expert', 'Cloud Architect', 'Problem Solver'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeText() {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            typingText.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            
+            if (charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(typeText, 500);
+                return;
             }
+        } else {
+            typingText.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
             
-            .social-links {
-                flex-wrap: wrap;
-                justify-content: center;
+            if (charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeText, 2000);
+                return;
             }
-        }
-    </style>
-</head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-overlay">
-        <div class="loading-text">INITIALIZING...</div>
-    </div>
-
-    <!-- Background -->
-    <div class="bg-container">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    
-    <div class="led-lines">
-        <div class="led-line">
-            <div class="led-point"></div>
-        </div>
-        <div class="led-line">
-            <div class="led-point"></div>
-        </div>
-        <div class="led-line">
-            <div class="led-point"></div>
-        </div>
-    </div>
-    
-    <div class="grid-lines"></div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="led-border">
-            <h1 class="main-title">COMING SOON</h1>
-            <div class="subtitle">CODES BY HARISH</div>
-            <div class="description">
-                Elite developer portfolio under construction. Crafting digital experiences with cutting-edge technology and innovative solutions.
-            </div>
-            
-            <div class="progress-container">
-                <div class="progress-bar"></div>
-            </div>
-            
-            <div class="social-links" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;">
-                <a href="https://www.instagram.com/boss._of_devils/" class="social-link">I</a>
-                <a href="www.linkedin.com/in/harishcodes01" class="social-link">L</a>
-                <a href="https://github.com/harishprp370" class="social-link">G</a>
-                <a href="mailto:contact@codesbyharish.com" class="social-link">@</a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const loadingOverlay = document.querySelector('.loading-overlay');
-        const ledBorder = document.querySelector('.led-border');
-        const ledBorderContent = document.querySelectorAll('.led-border > *:not(style)'); // Exclude style tag if any
-
-        window.addEventListener('load', function() {
-            // Fallback to start animations if animationend doesn't fire for some reason
-            setTimeout(() => {
-                document.body.style.animation = 'none';
-                // Trigger load animations if not already triggered by animationend
-                if (loadingOverlay.style.opacity !== "0") { // Check if fadeOut might not have completed
-                    triggerLoadAnimations();
-                }
-            }, 3000);
-        });
-
-        function triggerLoadAnimations() {
-            ledBorderContent.forEach((el, index) => {
-                setTimeout(() => {
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0px)';
-                }, index * 150); // Stagger delay
-            });
-        }
-
-        // Start content animations after loading screen fades out
-        if (loadingOverlay) {
-            loadingOverlay.addEventListener('animationend', triggerLoadAnimations);
         }
         
-        // Add some interactive particle effects
-        document.addEventListener('mousemove', function(e) {
-            if (Math.random() > 0.98) {
-                createParticle(e.clientX, e.clientY);
+        setTimeout(typeText, isDeleting ? 100 : 150);
+    }
+
+    // Start typing animation
+    setTimeout(typeText, 1000);
+
+    // Animate elements on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
             }
         });
+    }, observerOptions);
 
-        function createParticle(x, y) {
-            const particle = document.createElement('div');
-            particle.style.cssText = `
-                position: fixed;
-                left: ${x}px;
-                top: ${y}px;
-                width: 4px;
-                height: 4px;
-                background: ${Math.random() > 0.5 ? '#ff0066' : '#0066ff'};
-                border-radius: 50%;
-                pointer-events: none;
-                z-index: 100;
-                animation: particleFade 1s ease-out forwards;
-            `;
-            
-            document.body.appendChild(particle);
-            
-            setTimeout(() => {
-                particle.remove();
-            }, 1000);
-        }
+    // Observe elements for animation
+    document.querySelectorAll('.service-card, .project-card, .cert-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(el);
+    });
 
-        // Subtle parallax for the .led-border
-        if (ledBorder) {
-            document.addEventListener('mousemove', function(e) {
-                const xAxis = (window.innerWidth / 2 - e.pageX) / 50; // Adjust divisor for sensitivity
-                const yAxis = (window.innerHeight / 2 - e.pageY) / 50; // Adjust divisor for sensitivity
-                ledBorder.style.transform = `translateX(${xAxis * 2}px) translateY(${yAxis * 2}px) perspective(1000px) rotateY(${xAxis/5}deg) rotateX(${-yAxis/5}deg)`;
-            });
-        }
-
-        // Add particle fade animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes particleFade {
-                0% {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-                100% {
-                    opacity: 0;
-                    transform: scale(0) translateY(-50px);
-                }
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
-        `;
-        document.head.appendChild(style);
-    </script>
-</body>
-</html>
+        });
+    });
+
+    // Add floating animation to tech items
+    document.querySelectorAll('.tech-item').forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.1}s`;
+    });
+</script>
+
+<?php include 'includes/footer.php'; ?>
