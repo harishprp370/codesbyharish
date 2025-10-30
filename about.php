@@ -43,7 +43,7 @@
                     <div class="image-wrapper">
                         <div class="profile-card">
                             <div class="profile-avatar">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&auto=format&q=80" alt="Harish Profile" class="avatar-img">
+                                <img src="assets/hero.jpeg" alt="Harish Profile" class="avatar-img">
                                 <div class="status-indicator">
                                     <div class="status-dot"></div>
                                     <span>Available for work</span>

@@ -1,7 +1,25 @@
 <?php include 'includes/header.php'; ?>
 
+<!-- Intro Animation Overlay -->
+<div id="intro-overlay" class="intro-overlay">
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span class="terminal-title">codesbyharish.in - System Boot</span>
+            <div class="terminal-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div id="terminal-text" class="terminal-text"></div>
+            <span class="cursor">|</span>
+        </div>
+    </div>
+</div>
+
 <!-- Main Content -->
-<main class="main-content">
+<main class="main-content" id="main-content" style="display: none;">
     <!-- Hero Section -->
     <section class="hero-section" id="home">
         <div class="hero-container">
@@ -460,6 +478,12 @@
     /* Main Content Spacing */
     .main-content {
         margin-top: 70px;
+        opacity: 0;
+        animation: fadeInContent 1.5s ease-out 0.5s forwards;
+    }
+
+    @keyframes fadeInContent {
+        to { opacity: 1; }
     }
 
     .container {
@@ -641,17 +665,77 @@
     /* Hero Image */
     .hero-image {
         position: relative;
-        height: 500px;
+        height: 600px;
     }
+    
 
     .image-container {
         position: relative;
         width: 100%;
         height: 100%;
-        background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        /* background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); */
+        background-image: url('assets/hero.jpeg');
         border-radius: 20px;
         overflow: hidden;
     }
+
+    .image-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 25, 47, 0.55); /* Dark blue overlay */
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
+
+.float-item {
+    position: absolute;
+    color: #00f5d4; /* Cyber teal */
+    font-size: 24px;
+    opacity: 0.8;
+    animation: float 6s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(0, 245, 212, 0.8);
+    z-index: 2;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.float-item:nth-child(1) { top: 20%; left: 15%; }
+.float-item:nth-child(2) { top: 60%; left: 30%; }
+.float-item:nth-child(3) { top: 40%; right: 20%; }
+.float-item:nth-child(4) { bottom: 15%; right: 30%; }
+
+.hero-image {
+    position: relative;
+    height: 600px;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 153, 255, 0.2);
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #2563eb, #00f5d4);
+    opacity: 0.2;
+    z-index: 1;
+}
+
 
     .floating-elements {
         position: absolute;
@@ -1117,6 +1201,237 @@
         color: var(--primary-color);
     }
 
+    /* Intro Overlay */
+    .intro-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a0a0a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        font-family: 'Courier New', monospace;
+    }
+
+    .terminal-container {
+        background: #1a1a1a;
+        border: 2px solid #333;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        box-shadow: 0 0 20px rgba(0, 255, 153, 0.3);
+        overflow: hidden;
+    }
+
+    .terminal-header {
+        background: #2a2a2a;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #333;
+    }
+
+    .terminal-title {
+        color: #00ff99;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .terminal-controls {
+        display: flex;
+        gap: 5px;
+    }
+
+    .control {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+
+    .red { background: #ff5f57; }
+    .yellow { background: #ffbd2e; }
+    .green { background: #28ca42; }
+
+    .terminal-body {
+        padding: 20px;
+        color: #00ff99;
+        font-size: 16px;
+        line-height: 1.5;
+        min-height: 200px;
+        position: relative;
+    }
+
+    .terminal-text {
+        white-space: pre-line;
+    }
+
+    .cursor {
+        display: inline-block;
+        animation: blink 0.7s infinite;
+        color: #00ff99;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+
+    /* Enhanced Homepage Animations */
+    .main-content {
+        opacity: 0;
+        animation: fadeInContent 1.5s ease-out 0.5s forwards;
+    }
+
+    @keyframes fadeInContent {
+        to { opacity: 1; }
+    }
+
+    .hero-section, .services-section, .tech-section, .work-section, .certifications-section, .cta-section {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+        animation: scrollUpPop 1s ease-out forwards;
+    }
+
+    .hero-section { animation-delay: 1s; }
+    .services-section { animation-delay: 1.2s; }
+    .tech-section { animation-delay: 1.4s; }
+    .work-section { animation-delay: 1.6s; }
+    .certifications-section { animation-delay: 1.8s; }
+    .cta-section { animation-delay: 2s; }
+
+    @keyframes scrollUpPop {
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    /* Mobile Enhancements for Attractiveness */
+    @media (max-width: 768px) {
+        .hero-content {
+            grid-template-columns: 1fr;
+            text-align: left; /* Shift from center to left for better flow */
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            text-align: left;
+        }
+
+        .hero-description {
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .hero-stats {
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-buttons {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 1rem;
+            font-size: 1rem;
+            justify-content: center;
+        }
+
+        .hero-image {
+            height: 400px;
+            margin-top: 1rem;
+        }
+
+        .image-container {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .floating-elements {
+            display: none; /* Hide floating elements on mobile for cleaner look */
+        }
+
+        /* Staggered card animations for services and projects */
+        .services-grid, .projects-preview {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .service-card, .project-card {
+            transform: translateX(-100%);
+            opacity: 0;
+            animation: slideInLeft 0.6s ease-out forwards;
+        }
+
+        .service-card:nth-child(odd), .project-card:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        .service-card:nth-child(even), .project-card:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes slideInLeft {
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Tech stack as a swipeable horizontal scroll */
+        .tech-categories {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            padding: 0 1rem;
+        }
+
+        .tech-category {
+            min-width: 200px;
+            scroll-snap-align: start;
+        }
+
+        /* Certifications as a vertical stack with hover effects */
+        .certifications-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .cert-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        /* CTA section with full-width buttons */
+        .cta-buttons {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
     /* Animations */
     @keyframes fadeInUp {
         from {
@@ -1126,74 +1441,6 @@
         to {
             opacity: 1;
             transform: translateY(0);
-        }
-    }
-
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-        .hero-content {
-            grid-template-columns: 1fr;
-            text-align: center;
-            gap: 2rem;
-        }
-
-        .hero-title {
-            font-size: 3rem;
-        }
-
-        .hero-stats {
-            justify-content: center;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .container {
-            padding: 0 1rem;
-        }
-
-        .hero-title {
-            font-size: 2.5rem;
-        }
-
-        .hero-stats {
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .section-title {
-            font-size: 2rem;
-        }
-
-        .services-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .tech-categories {
-            grid-template-columns: 1fr;
-        }
-
-        .hero-buttons {
-            justify-content: center;
-        }
-
-        .cta-buttons {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .hero-title {
-            font-size: 2rem;
-        }
-
-        .cta-title {
-            font-size: 2rem;
-        }
-
-        .service-card,
-        .project-card {
-            margin: 0 0.5rem;
         }
     }
 </style>
@@ -1276,6 +1523,73 @@
     // Add floating animation to tech items
     document.querySelectorAll('.tech-item').forEach((item, index) => {
         item.style.animationDelay = `${index * 0.1}s`;
+    });
+
+    // Intro Animation Script
+    document.addEventListener('DOMContentLoaded', function() {
+        const overlay = document.getElementById('intro-overlay');
+        const terminalText = document.getElementById('terminal-text');
+        const mainContent = document.getElementById('main-content');
+        
+        // Ensure elements exist before proceeding
+        if (!overlay || !terminalText || !mainContent) {
+            console.error('Intro animation elements not found!');
+            if(mainContent) mainContent.style.display = 'block';
+            if(overlay) overlay.style.display = 'none';
+            return;
+        }
+
+        const lines = [
+            '> Initializing Portfolio Environment...',
+            '> Loading developer profile [Harish N]...',
+            '> Setting up frameworks: PHP | Laravel | JS | Python | Flutter',
+            '> Establishing secure connection to codesbyharish.in...',
+            '> Fetching project data... ✓',
+            '> Launching interface...',
+            '',
+            '💥 WELCOME TO CODES BY HARISH'
+        ];
+
+        let lineIndex = 0;
+        let charIndex = 0;
+        let currentLine = '';
+
+        function typeLine() {
+            // Stop if we've already faded out (e.g., user navigated away)
+            if (overlay.style.opacity === '0') return;
+
+            if (lineIndex < lines.length) {
+                const line = lines[lineIndex];
+                if (charIndex < line.length) {
+                    currentLine += line[charIndex];
+                    terminalText.textContent = lines.slice(0, lineIndex).join('\n') + '\n' + currentLine;
+                    charIndex++;
+                    setTimeout(typeLine, 50);
+                } else {
+                    lineIndex++;
+                    charIndex = 0;
+                    currentLine = '';
+                    // Pause longer on the last line before fading
+                    const pause = lineIndex === lines.length ? 1000 : 300;
+                    setTimeout(typeLine, pause);
+                }
+            } else {
+                // Animation complete, transition to main content
+                setTimeout(() => {
+                    overlay.style.transition = 'opacity 1s ease-out';
+                    overlay.style.opacity = '0';
+                    // Use 'transitionend' event for a more reliable handoff
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+                        mainContent.style.display = 'block';
+                        // The CSS animation `fadeInContent` will handle the reveal
+                    }, 1000); // Corresponds to transition duration
+                }, 500);
+            }
+        }
+
+        // Start the animation
+        setTimeout(typeLine, 500);
     });
 </script>
 

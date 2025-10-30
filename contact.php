@@ -46,22 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     throw new Exception("Database connection not available");
                 }
                 
-                // Create table if it doesn't exist
-                $createTableSQL = "CREATE TABLE IF NOT EXISTS contact_messages (
-                    id INT AUTO_INCREMENT PRIMARY KEY,
-                    name VARCHAR(255) NOT NULL,
-                    email VARCHAR(255) NOT NULL,
-                    phone VARCHAR(20) NULL,
-                    subject VARCHAR(255) NULL,
-                    message TEXT NOT NULL,
-                    source VARCHAR(50) DEFAULT 'website',
-                    created_at DATETIME NOT NULL,
-                    ip_address VARCHAR(45) NULL,
-                    user_agent TEXT NULL,
-                    status ENUM('new', 'read', 'replied') DEFAULT 'new'
-                )";
                 
-                $pdo->exec($createTableSQL);
                 
                 $sql = "INSERT INTO contact_messages (name, email, phone, subject, message, source, created_at, ip_address, user_agent) 
                         VALUES (:name, :email, :phone, :subject, :message, :source, :created_at, :ip_address, :user_agent)";
@@ -1008,7 +993,6 @@ if (phoneInput) {
 </style>
 
 <!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 <?php include 'includes/footer.php'; ?>
