@@ -1,4 +1,8 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+
+$pageTitle = "About Me - CodesByHarish";
+$metaDescription = "Learn more about Harish, a passionate full-stack developer and cybersecurity specialist. Discover his journey, skills, education, and professional experiences in the tech industry.";
+include 'includes/header.php'; ?>
 
 <!-- Main Content -->
 <main class="main-content">

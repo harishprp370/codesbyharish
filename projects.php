@@ -1,4 +1,7 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+$pageTitle = "Projects - CodesByHarish";
+$metaDescription = "Explore the diverse range of projects by CodesByHarish, showcasing expertise in web development, cybersecurity, AI, and more. Discover innovative solutions and creative implementations across various domains.";
+include 'includes/header.php'; ?>
 
 <!-- Main Content -->
 <main class="main-content">

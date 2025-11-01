@@ -1,4 +1,8 @@
-<?php include 'includes/header.php'; ?>
+<?php 
+$pageTitle = "Home - Harish Prasad";
+$metaDescription = "Welcome to Harish Prasad's personal portfolio website. Explore my projects, skills, and services in software development and cybersecurity.";
+
+include 'includes/header.php'; ?>
 
 <!-- Intro Animation Overlay -->
 <div id="intro-overlay" class="intro-overlay">
@@ -13,7 +17,7 @@
         </div>
         <div class="terminal-body">
             <div id="terminal-text" class="terminal-text"></div>
-            <span class="cursor">|</span>
+            <span class="cursor"></span>
         </div>
     </div>
 </div>
@@ -79,12 +83,12 @@
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
+            <!-- <div class="scroll-indicator">
                 <span>Scroll Down</span>
                 <div class="scroll-arrow">
                     <i class="fas fa-chevron-down"></i>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -307,85 +311,131 @@
                     Some of my recent work showcasing different technologies and solutions
                 </p>
             </div>
-            <div class="projects-preview">
-                <div class="project-card">
+            <div class="projects-grid">
+                <!-- EliteArtsss Project -->
+                <div class="project-card featured" data-category="ecommerce web" data-aos="zoom-in">
                     <div class="project-image">
+                        <img src="assets/elitearts.jpeg" alt="EliteArtsss Jewelry Platform" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link">
+                                <a href="https://eliteartsss.com" class="project-link" title="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="#" class="project-link">
+                                <a href="#" class="project-link" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
+                                <button class="project-link view-details" data-project="eliteartsss">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
                             </div>
                         </div>
+                        <div class="project-badge featured-badge">Featured</div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">EliteArtsss E-commerce</h3>
+                        <h3 class="project-title">EliteArtsss Jewelry Platform</h3>
                         <p class="project-description">
-                            Luxury jewelry shopping platform with Razorpay integration and real-time shipping
+                            Luxury e-commerce platform with Razorpay integration, real-time shipping via Delhivery API, 
+                            and responsive design for premium jewelry shopping experience.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag php">PHP</span>
+                            <span class="tech-tag mysql">MySQL</span>
+                            <span class="tech-tag bootstrap">Bootstrap</span>
+                            <span class="tech-tag api">API Integration</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                Mar 2025 - Apr 2025
+                            </span>
+                            <span class="project-type">E-commerce</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                
+
+                <!-- School Website Project -->
+                <div class="project-card" data-category="web education" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-image">
+                        <img src="assets/vts.png" alt="School Website" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link">
+                                <a href="https://vivekanandatechnoschool.com/" class="project-link" title="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="#" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                                <button class="project-link view-details" data-project="school">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">QwickLearn Platform</h3>
+                        <h3 class="project-title">Vivekananda Techno School</h3>
                         <p class="project-description">
-                            Online learning management system with interactive content and progress tracking
+                            Professional school website with admin panel, student management, 
+                            and interactive features for educational institution.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag php">PHP</span>
+                            <span class="tech-tag mysql">MySQL</span>
+                            <span class="tech-tag bootstrap">Bootstrap</span>
+                            <span class="tech-tag phpmyadmin">PhpMyAdmin</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                Feb 2025 - Apr 2025
+                            </span>
+                            <span class="project-type">Educational</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                
+
+                <!-- T-Phish Tool -->
+                <div class="project-card" data-category="security" data-aos="zoom-in" data-aos-delay="1000">
                     <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop&auto=format&q=80" alt="T-Phish Tool" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link">
+                                <a href="https://github.com/harishprp370/T-Phish" class="project-link" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
+                                <button class="project-link view-details" data-project="tphish">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
                             </div>
                         </div>
+                        <div class="project-badge security-badge">Security Research</div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">School Management System</h3>
+                        <h3 class="project-title">T-Phish Security Tool</h3>
                         <p class="project-description">
-                            Complete school website with admin panel and student management features
+                            Social engineering and phishing simulation tool for security awareness 
+                            training and penetration testing purposes.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag security">Security</span>
+                            <span class="tech-tag pentesting">Pentesting</span>
+                            <span class="tech-tag research">Research</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                Aug 2024
+                            </span>
+                            <span class="project-type">Security Tool</span>
                         </div>
                     </div>
                 </div>
+
+                
+
             </div>
+
             <div class="projects-cta">
                 <a href="projects.php" class="btn btn-outline-large">
                     <i class="fas fa-folder-open"></i>
@@ -670,14 +720,16 @@
     
 
     .image-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        /* background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); */
-        background-image: url('assets/hero.jpeg');
-        border-radius: 20px;
-        overflow: hidden;
-    }
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/hero.jpeg');
+    background-size: cover;
+    background-position: center 40%; /* show more top or bottom if needed */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 
     .image-container::after {
     content: "";
@@ -763,7 +815,7 @@
 
     .float-item:nth-child(1) {
         top: 20%;
-        left: 15%;
+        left: 50%;
         animation-delay: -0.5s;
     }
 
@@ -1027,6 +1079,145 @@
         justify-content: center;
         opacity: 0;
         transition: var(--transition);
+    }
+
+     /* Projects Grid */
+    .projects-grid-section {
+        padding: 3rem 0 5rem;
+        background: var(--bg-secondary);
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+
+    .project-card {
+        background: var(--bg-primary);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        position: relative;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card.featured {
+        border: 2px solid var(--primary-color);
+    }
+
+    .project-image {
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+    }
+
+    .project-card:hover .project-image img {
+        transform: scale(1.1);
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(37, 99, 235, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+
+    .project-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .project-link {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    .project-link:hover {
+        transform: scale(1.1);
+        background: var(--bg-secondary);
+    }
+
+    .project-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        z-index: 2;
+    }
+
+    .featured-badge {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .project-info {
+        padding: 2rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .project-description {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-tech {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .tech-tag {
+        padding: 0.25rem 0.75rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid;
     }
 
     .project-card:hover .project-overlay {
@@ -1540,9 +1731,8 @@
         }
 
         const lines = [
-            '> Initializing Portfolio Environment...',
-            '> Loading developer profile [Harish N]...',
-            '> Setting up frameworks: PHP | Laravel | JS | Python | Flutter',
+            
+            '> Loading Harish\'s Developer Toolkit... ✓',
             '> Establishing secure connection to codesbyharish.in...',
             '> Fetching project data... ✓',
             '> Launching interface...',
@@ -1564,13 +1754,13 @@
                     currentLine += line[charIndex];
                     terminalText.textContent = lines.slice(0, lineIndex).join('\n') + '\n' + currentLine;
                     charIndex++;
-                    setTimeout(typeLine, 50);
+                    setTimeout(typeLine, 10);
                 } else {
                     lineIndex++;
                     charIndex = 0;
                     currentLine = '';
                     // Pause longer on the last line before fading
-                    const pause = lineIndex === lines.length ? 1000 : 300;
+                    const pause = lineIndex === lines.length ? 400 : 90;
                     setTimeout(typeLine, pause);
                 }
             } else {

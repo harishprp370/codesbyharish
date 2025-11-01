@@ -1,3 +1,5 @@
 config.php
 *.db
-
+show.php
+/private/
+*.sql

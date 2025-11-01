@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4Y81B24WJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N4Y81B24WJ');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CodesByHarish - Portfolio | Web Developer & Designer</title>
-    <meta name="description" content="CodesByHarish - Professional web developer and designer portfolio showcasing innovative projects, skills, and creative solutions.">
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $metaDescription; ?>">
     <meta name="keywords" content="web developer, portfolio, web design, frontend, backend, full stack developer, harish">
     <meta name="author" content="Harish">
     <meta name="robots" content="index, follow">
@@ -25,17 +34,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!-- Google Translate -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,hi,kn,te,ta,ar,en-US,en-GB',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'en,hi,kn,te,ta,ar',
+          autoDisplay: false
+      }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     <style>
         :root {
@@ -71,28 +81,33 @@
             color: var(--text-primary);
             transition: var(--transition);
             cursor: none;
+            position: relative;
+        }
+
+        .cursor, .cursor-follower {
+            pointer-events: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            will-change: transform;
         }
 
         /* Enhanced Cursor for Better Sync */
         .cursor {
-            position: fixed;
             width: 20px;
             height: 20px;
             border-radius: 50%;
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-            pointer-events: none;
             z-index: 9999;
             transition: transform 0.05s ease-out; /* Faster transition for sync */
             mix-blend-mode: difference; /* For better visibility */
         }
 
         .cursor-follower {
-            position: fixed;
             width: 40px;
             height: 40px;
             border-radius: 50%;
             border: 2px solid var(--primary-color);
-            pointer-events: none;
             z-index: 9998;
             transition: transform 0.2s ease-out, opacity 0.2s ease-out; /* Smooth lag for follower */
             opacity: 0.6;
@@ -357,13 +372,10 @@
             animation: fadeInDown 0.6s ease-out;
         }
 
-        /* Hide Google Translate Element */
-        #google_translate_element {
-            display: none !important;
-            visibility: hidden !important;
-            position: absolute !important;
-            left: -9999px !important;
-        }
+#google_translate_element {
+  display: none;
+}
+
     </style>
 </head>
 <body>
@@ -380,23 +392,28 @@
                 <li><a href="index.php" class="nav-link active">Home</a></li>
                 <li><a href="about.php" class="nav-link">About</a></li>
                 <li><a href="projects.php" class="nav-link">Projects</a></li>
+                <li><a href="services.php" class="nav-link">Services</a></li>
                 <li><a href="contact.php" class="nav-link">Contact</a></li>
+                <!-- <li><a href="resume.php" class="nav-link">Resume</a></li> -->
+
             </ul>
 
             <div class="nav-controls">
                 <div class="language-dropdown">
-                    <button class="lang-toggle" id="langToggle">
-                        <i class="fas fa-globe"></i>
-                    </button>
-                    <div class="lang-menu" id="langMenu">
-                        <a href="#" class="lang-option" data-lang="en">English</a>
-                        <a href="#" class="lang-option" data-lang="hi">हिंदी</a>
-                        <a href="#" class="lang-option" data-lang="kn">ಕನ್ನಡ</a>
-                        <a href="#" class="lang-option" data-lang="te">తెలుగు</a>
-                        <a href="#" class="lang-option" data-lang="ta">தமிழ்</a>
-                        <a href="#" class="lang-option" data-lang="ar">العربية</a>
-                    </div>
-                </div>
+  <button class="lang-toggle" id="langToggle">
+    <i class="fas fa-globe"></i>
+  </button>
+  <div class="lang-menu" id="langMenu">
+    <a href="#" class="lang-option" data-lang="en">English</a>
+    <a href="#" class="lang-option" data-lang="hi">हिंदी</a>
+    <a href="#" class="lang-option" data-lang="kn">ಕನ್ನಡ</a>
+    <a href="#" class="lang-option" data-lang="te">తెలుగు</a>
+    <a href="#" class="lang-option" data-lang="ta">தமிழ்</a>
+    <a href="#" class="lang-option" data-lang="ar">العربية</a>
+  </div>
+</div>
+
+
                 
                 <button class="theme-toggle" id="themeToggle">
                     <i class="fas fa-moon"></i>
@@ -413,14 +430,26 @@
     </header>
 
     <script>
-        // Enhanced Custom Cursor with Better Sync
+        // Enhanced Custom Cursor - Synchronized movement
         const cursor = document.querySelector('.cursor');
         const cursorFollower = document.querySelector('.cursor-follower');
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
 
         document.addEventListener('mousemove', (e) => {
-            cursor.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`; // Direct transform for instant sync
-            cursorFollower.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`; // Slight lag via CSS transition
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.transform = `translate(${mouseX - cursor.offsetWidth/2}px, ${mouseY - cursor.offsetHeight/2}px)`;
         });
+
+        // Animate follower for smooth trailing effect
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.18;
+            followerY += (mouseY - followerY) * 0.18;
+            cursorFollower.style.transform = `translate(${followerX - cursorFollower.offsetWidth/2}px, ${followerY - cursorFollower.offsetHeight/2}px)`;
+            requestAnimationFrame(animateFollower);
+        }
+        animateFollower();
 
         // Theme Toggle
         const themeToggle = document.getElementById('themeToggle');
@@ -545,5 +574,36 @@
             }
         });
     </script>
-</body>
-</html>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const langToggle = document.getElementById('langToggle');
+    const langMenu = document.getElementById('langMenu');
+
+    // Toggle dropdown
+    langToggle.addEventListener('click', () => {
+        langMenu.classList.toggle('show');
+    });
+
+    // When a language is clicked
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            translatePage(lang);
+            langMenu.classList.remove('show');
+        });
+    });
+
+    // Function to trigger Google Translate
+    function translatePage(lang) {
+        const select = document.querySelector('select.goog-te-combo');
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+        } else {
+            console.error("Google Translate not yet loaded.");
+        }
+    }
+});
+</script>
+

@@ -1,4 +1,6 @@
 <?php 
+$pageTitle = "Contact - codesbyharish";
+$metaDescription = "Get in touch with codesbyharish, a professional web developer and designer. Fill out the contact form to send a message.";
 include 'includes/config.php';
 
 // Handle form submission
