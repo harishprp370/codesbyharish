@@ -392,9 +392,10 @@
                 <li><a href="index.php" class="nav-link active">Home</a></li>
                 <li><a href="about.php" class="nav-link">About</a></li>
                 <li><a href="projects.php" class="nav-link">Projects</a></li>
+                <li><a href="publications.php" class="nav-link">Publications</a></li>
                 <li><a href="services.php" class="nav-link">Services</a></li>
                 <li><a href="contact.php" class="nav-link">Contact</a></li>
-                <!-- <li><a href="resume.php" class="nav-link">Resume</a></li> -->
+                
 
             </ul>
 
@@ -480,12 +481,38 @@
             langMenu.classList.toggle('active');
         });
 
-        // Enhanced Active Link Management
+        // Enhanced Active Link Management for Clean URLs
         function setActiveLink() {
-            const currentPath = window.location.pathname.split('/').pop() || 'index.php'; // Get current page
+            // Get current path without extension and leading slash
+            let currentPath = window.location.pathname.replace(/^\/+|\/+$/g, '');
+            
+            // Remove .php extension if present
+            currentPath = currentPath.replace(/\.php$/, '');
+            
+            // Handle root/home page
+            if (currentPath === '' || currentPath === 'index') {
+                currentPath = 'index';
+            }
+            
+            // Remove all active classes first
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') === currentPath) {
+            });
+            
+            // Find and activate the matching link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                let href = link.getAttribute('href');
+                
+                // Remove .php extension from href
+                href = href.replace(/\.php$/, '');
+                
+                // Remove leading slash and trailing slash
+                href = href.replace(/^\/+|\/+$/g, '');
+                
+                // Handle index/home page
+                if (href === 'index' && (currentPath === '' || currentPath === 'index')) {
+                    link.classList.add('active');
+                } else if (href !== 'index' && href === currentPath) {
                     link.classList.add('active');
                 }
             });
@@ -497,6 +524,7 @@
         // Enhanced Click Handler
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
+                // Don't prevent default - allow normal navigation
                 document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
                 e.target.classList.add('active');
                 
@@ -572,6 +600,11 @@
                     ? 'rgba(17, 24, 39, 0.95)' 
                     : 'rgba(255, 255, 255, 0.95)';
             }
+        });
+
+        // Re-check active link on page show (handles back/forward navigation)
+        window.addEventListener('pageshow', function() {
+            setActiveLink();
         });
     </script>
     <script>
