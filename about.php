@@ -1,1438 +1,301 @@
-<?php 
-
-$pageTitle = "About Me - CodesByHarish";
-$metaDescription = "Learn more about Harish, a passionate full-stack developer and cybersecurity specialist. Discover his journey, skills, education, and professional experiences in the tech industry.";
-include 'includes/header.php'; ?>
-
-<!-- Main Content -->
-<main class="main-content">
-    <!-- Hero About Section -->
-    <section class="about-hero" id="about">
-        <div class="container">
-            <div class="about-hero-content">
-                <div class="about-text">
-                    <span class="section-subtitle">Get to Know Me</span>
-                    <h1 class="about-title">
-                        I'm <span class="name-highlight">Harish</span><br>
-                        <span class="typing-roles"></span>
-                    </h1>
-                    <p class="about-description">
-                        A passionate full-stack developer and cybersecurity specialist from Bangalore, India. 
-                        Currently pursuing my Master's in Cybersecurity at Jain University while working as 
-                        a Junior Software Developer at Solar Bee. I bridge the gap between innovative 
-                        development and robust security practices.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="highlight-text">
-                                <span class="highlight-title">MCA Student</span>
-                                <span class="highlight-desc">Cybersecurity at Jain University</span>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="highlight-text">
-                                <span class="highlight-title">Currently Working</span>
-                                <span class="highlight-desc">Junior Developer at Solar Bee</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <div class="profile-card">
-                            <div class="profile-avatar">
-                                <img src="assets/hero.jpeg" alt="Harish Profile" class="avatar-img">
-                                <div class="status-indicator">
-                                    <div class="status-dot"></div>
-                                    <span>Available for work</span>
-                                </div>
-                            </div>
-                            <div class="floating-badges">
-                                <div class="badge-item" style="--delay: 0.5s;">
-                                    <i class="fab fa-php"></i>
-                                    <span>PHP</span>
-                                </div>
-                                <div class="badge-item" style="--delay: 1s;">
-                                    <i class="fab fa-python"></i>
-                                    <span>Python</span>
-                                </div>
-                                <div class="badge-item" style="--delay: 1.5s;">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <span>Security</span>
-                                </div>
-                                <div class="badge-item" style="--delay: 2s;">
-                                    <i class="fas fa-cloud"></i>
-                                    <span>Cloud</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Journey Timeline -->
-    <section class="journey-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">My Journey</span>
-                <h2 class="section-title">Professional Timeline</h2>
-                <p class="section-description">
-                    From student to professional developer - here's my journey in tech
-                </p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Nov 2024 - Present</span>
-                        <h3 class="timeline-title">Junior Software Developer</h3>
-                        <p class="timeline-company">Solar Bee - India</p>
-                        <p class="timeline-description">
-                            Working on full-stack development using PHP, MySQL, Python, and Google Cloud Platform. 
-                            Implementing SEO strategies, managing web hosting, and developing scalable applications.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">GCP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-marker">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Sep 2024 - Oct 2024</span>
-                        <h3 class="timeline-title">AI & Prompt Engineering Intern</h3>
-                        <p class="timeline-company">VaultofCodes</p>
-                        <p class="timeline-description">
-                            Specialized in artificial intelligence and prompt engineering, developing AI-driven 
-                            solutions and optimizing language model interactions.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">AI</span>
-                            <span class="skill-tag">Prompt Engineering</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-marker">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Apr 2024 - Jun 2024</span>
-                        <h3 class="timeline-title">Web Development Intern</h3>
-                        <p class="timeline-company">PyGenicArc</p>
-                        <p class="timeline-description">
-                            Gained hands-on experience in web development, creating responsive applications 
-                            with HTML, CSS, JavaScript, and Bootstrap. Worked with Firebase for backend services.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
-                    <div class="timeline-marker">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jan 2024 - Feb 2024</span>
-                        <h3 class="timeline-title">Cybersecurity Analyst Intern</h3>
-                        <p class="timeline-company">Tata Group</p>
-                        <p class="timeline-description">
-                            Worked on Identity and Access Management (IAM) fundamentals, strategy assessment, 
-                            and crafting custom IAM solutions with platform integration.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">IAM</span>
-                            <span class="skill-tag">Risk Management</span>
-                            <span class="skill-tag">Security Analysis</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Academic Background</span>
-                <h2 class="section-title">Education & Learning</h2>
-            </div>
-            <div class="education-grid">
-                <div class="education-card current" data-aos="fade-up">
-                    <div class="education-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <div class="education-content">
-                        <span class="education-period">May 2025 - Apr 2027</span>
-                        <h3 class="education-degree">Master of Computer Applications</h3>
-                        <p class="education-specialization">Cybersecurity Specialization</p>
-                        <p class="education-institution">Jain (Deemed-to-be University)</p>
-                        <div class="education-status">
-                            <span class="status-badge current">Currently Pursuing</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="education-card completed" data-aos="fade-up" data-aos-delay="200">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="education-content">
-                        <span class="education-period">Oct 2021 - Sep 2024</span>
-                        <h3 class="education-degree">Bachelor of Computer Applications</h3>
-                        <p class="education-specialization">Computer Programming & Applications</p>
-                        <p class="education-institution">Davangere University</p>
-                        <div class="education-grade">
-                            <span class="grade-badge">CGPA: 8.4/10</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Matrix -->
-    <section class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Technical Expertise</span>
-                <h2 class="section-title">Skills & Technologies</h2>
-            </div>
-            <div class="skills-container">
-                <!-- Programming Languages -->
-                <div class="skill-category" data-aos="fade-up">
-                    <h3 class="category-title">
-                        <i class="fas fa-code"></i>
-                        Programming Languages
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-php"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">PHP</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="90"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="85"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Java</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="75"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-                <!-- Frameworks & Technologies -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="category-title">
-                        <i class="fas fa-layer-group"></i>
-                        Frameworks & Technologies
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-laravel"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Laravel</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="85"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-bootstrap"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Bootstrap</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="90"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-fire"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Firebase</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">MySQL</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="85"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Security & Cloud -->
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="category-title">
-                        <i class="fas fa-shield-alt"></i>
-                        Security & Cloud
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-user-shield"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">IAM</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-google"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Google Cloud</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="75"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-linux"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Linux</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="80"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-bug"></i>
-                            </div>
-                            <div class="skill-info">
-                                <span class="skill-name">Penetration Testing</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="70"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Showcase -->
-    <section class="certifications-showcase">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Professional Development</span>
-                <h2 class="section-title">Certifications & Achievements</h2>
-            </div>
-            <div class="certifications-slider">
-                <div class="cert-item" data-aos="zoom-in">
-                    <div class="cert-badge">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="cert-details">
-                        <h4 class="cert-name">Tata Group Cybersecurity Analyst</h4>
-                        <p class="cert-issuer">Tata Group via Forage</p>
-                        <span class="cert-date">Feb 2024</span>
-                        <div class="cert-skills">
-                            <span>IAM Fundamentals</span>
-                            <span>Strategy Assessment</span>
-                            <span>Risk Management</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-item" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="cert-badge">
-                        <i class="fas fa-terminal"></i>
-                    </div>
-                    <div class="cert-details">
-                        <h4 class="cert-name">Bash Scripting & jq</h4>
-                        <p class="cert-issuer">EC-Council</p>
-                        <span class="cert-date">Sep 2023</span>
-                        <div class="cert-skills">
-                            <span>Bash</span>
-                            <span>Shell Scripting</span>
-                            <span>Linux</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-item" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="cert-badge">
-                        <i class="fas fa-crosshairs"></i>
-                    </div>
-                    <div class="cert-details">
-                        <h4 class="cert-name">MITRE ATT&CK Defender</h4>
-                        <p class="cert-issuer">Cybrary</p>
-                        <span class="cert-date">Sep 2023</span>
-                        <div class="cert-skills">
-                            <span>SOC Analysis</span>
-                            <span>Threat Hunting</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cert-item" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="cert-badge">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="cert-details">
-                        <h4 class="cert-name">AI for India 2.0</h4>
-                        <p class="cert-issuer">HCL GUVI</p>
-                        <span class="cert-date">Aug 2023</span>
-                        <div class="cert-skills">
-                            <span>Python</span>
-                            <span>Artificial Intelligence</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Fun Facts & Stats -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card" data-aos="flip-up">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <div class="stat-number" data-count="15">0</div>
-                    <div class="stat-label">Certifications Earned</div>
-                </div>
-                <div class="stat-card" data-aos="flip-up" data-aos-delay="100">
-                    <div class="stat-icon">
-                        <i class="fas fa-code-branch"></i>
-                    </div>
-                    <div class="stat-number" data-count="20">0</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-card" data-aos="flip-up" data-aos-delay="200">
-                    <div class="stat-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <div class="stat-number" data-count="3">0</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-card" data-aos="flip-up" data-aos-delay="300">
-                    <div class="stat-icon">
-                        <i class="fas fa-coffee"></i>
-                    </div>
-                    <div class="stat-number" data-count="500">0</div>
-                    <div class="stat-label">Cups of Coffee</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="about-cta">
-        <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2 class="cta-title">Let's Work Together</h2>
-                <p class="cta-description">
-                    Ready to bring your ideas to life with secure, scalable solutions? 
-                    I'm always excited to collaborate on new projects and challenges.
-                </p>
-                <div class="cta-buttons">
-                    <a href="projects.php" class="btn btn-primary-large">
-                        <i class="fas fa-eye"></i>
-                        View My Work
-                    </a>
-                    <a href="contact.php" class="btn btn-outline-large">
-                        <i class="fas fa-envelope"></i>
-                        Get In Touch
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<style>
-    /* Main Content */
-    .main-content {
-        margin-top: 70px;
-    }
-
-        .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
-    /* About Hero Section */
-    .about-hero {
-        padding: 5rem 0;
-        background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .about-hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: radial-gradient(circle at 30% 70%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
-        pointer-events: none;
-    }
-
-    .about-hero-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        align-items: center;
-        position: relative;
-        z-index: 2;
-    }
-
-    .about-title {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
-        color: var(--text-primary);
-    }
-
-    .name-highlight {
-        color: var(--primary-color);
-    }
-
-    .typing-roles::after {
-        content: '';
-        border-right: 2px solid var(--primary-color);
-        animation: blink 1s infinite;
-    }
-
-    .about-description {
-        font-size: 1.1rem;
-        color: var(--text-secondary);
-        line-height: 1.7;
-        margin-bottom: 2rem;
-    }
-
-    .about-highlights {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .highlight-item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        transition: var(--transition);
-    }
-
-    .highlight-item:hover {
-        border-color: var(--primary-color);
-        transform: translateY(-2px);
-    }
-
-    .highlight-icon {
-        width: 50px;
-        height: 50px;
-        background: var(--primary-color);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.2rem;
-    }
-
-    .highlight-text {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .highlight-title {
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 0.25rem;
-    }
-
-    .highlight-desc {
-        font-size: 0.9rem;
-        color: var(--text-secondary);
-    }
-
-    /* Profile Card */
-    .image-wrapper {
-        position: relative;
-        height: 500px;
-    }
-
-    .profile-card {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 20px;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-shadow: var(--shadow);
-    }
-
-    .profile-avatar {
-        position: relative;
-        margin-bottom: 2rem;
-    }
-
-    .avatar-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid var(--primary-color);
-    }
-
-    .status-indicator {
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: var(--bg-primary);
-        border: 2px solid var(--primary-color);
-        border-radius: 20px;
-        padding: 0.5rem 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-        color: var(--primary-color);
-    }
-
-    .status-dot {
-        width: 8px;
-        height: 8px;
-        background: #10b981;
-        border-radius: 50%;
-        animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
-    }
-
-    .floating-badges {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        pointer-events: none;
-    }
-
-    .badge-item {
-        position: absolute;
-        background: var(--primary-color);
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-        animation: float 6s ease-in-out infinite;
-        animation-delay: var(--delay);
-    }
-
-    .badge-item:nth-child(1) {
-        top: 10%;
-        left: 10%;
-    }
-
-    .badge-item:nth-child(2) {
-        top: 20%;
-        right: 10%;
-    }
-
-    .badge-item:nth-child(3) {
-        bottom: 30%;
-        left: 5%;
-    }
-
-    .badge-item:nth-child(4) {
-        bottom: 10%;
-        right: 15%;
-    }
-
-    /* Timeline Section */
-    .journey-section {
-        padding: 5rem 0;
-        background: var(--bg-secondary);
-    }
-
-    .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .timeline::before {
-        content: '';
-        position: absolute;
-        left: 30px;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: var(--border-color);
-    }
-
-    .timeline-item {
-        position: relative;
-        margin-bottom: 3rem;
-        padding-left: 80px;
-    }
-
-    .timeline-marker {
-        position: absolute;
-        left: 15px;
-        top: 0;
-        width: 30px;
-        height: 30px;
-        background: var(--primary-color);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 0.8rem;
-        z-index: 2;
-    }
-
-    .timeline-content {
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 2rem;
-        position: relative;
-    }
-
-    .timeline-content::before {
-        content: '';
-        position: absolute;
-        left: -10px;
-        top: 15px;
-        width: 0;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid var(--bg-primary);
-    }
-
-    .timeline-date {
-        font-size: 0.9rem;
-        color: var(--primary-color);
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        display: block;
-    }
-
-    .timeline-title {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 0.5rem;
-    }
-
-    .timeline-company {
-        font-size: 1rem;
-        color: var(--text-secondary);
-        margin-bottom: 1rem;
-        font-style: italic;
-    }
-
-    .timeline-description {
-        color: var(--text-secondary);
-        line-height: 1.6;
-        margin-bottom: 1rem;
-    }
-
-    .timeline-skills {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-    }
-
-    .skill-tag {
-        padding: 0.25rem 0.75rem;
-        background: var(--bg-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 15px;
-        font-size: 0.8rem;
-        color: var(--text-secondary);
-    }
-
-    /* Education Section */
-    .education-section {
-        padding: 5rem 0;
-    }
-
-    .education-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 2rem;
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .education-card {
-        background: var(--bg-primary);
-        border: 2px solid var(--border-color);
-        border-radius: 16px;
-        padding: 2rem;
-        position: relative;
-        transition: var(--transition);
-        overflow: hidden;
-    }
-
-    .education-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.05), transparent);
-        transition: var(--transition);
-    }
-
-    .education-card:hover::before {
-        left: 100%;
-    }
-
-    .education-card:hover {
-        border-color: var(--primary-color);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-    }
-
-    .education-card.current {
-        border-color: var(--primary-color);
-        background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, var(--bg-primary) 100%);
-    }
-
-    .education-icon {
-        width: 60px;
-        height: 60px;
-        background: var(--primary-color);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .education-period {
-        font-size: 0.9rem;
-        color: var(--primary-color);
-        font-weight: 600;
-        display: block;
-        margin-bottom: 0.5rem;
-    }
-
-    .education-degree {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 0.5rem;
-    }
-
-    .education-specialization {
-        color: var(--text-secondary);
-        margin-bottom: 0.5rem;
-    }
-
-    .education-institution {
-        color: var(--text-secondary);
-        font-weight: 500;
-        margin-bottom: 1rem;
-    }
-
-    .status-badge {
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
-    }
-
-    .status-badge.current {
-        background: var(--primary-color);
-        color: white;
-    }
-
-    .grade-badge {
-        padding: 0.5rem 1rem;
-        background: var(--bg-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: var(--text-primary);
-    }
-
-    /* Skills Section */
-    .skills-section {
-        padding: 5rem 0;
-        background: var(--bg-secondary);
-    }
-
-    .skill-category {
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .category-title {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 2rem;
-    }
-
-    .category-title i {
-        color: var(--primary-color);
-    }
-
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .skill-item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-        background: var(--bg-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        transition: var(--transition);
-    }
-
-    .skill-item:hover {
-        border-color: var(--primary-color);
-        transform: translateY(-2px);
-    }
-
-    .skill-icon {
-        width: 40px;
-        height: 40px;
-        background: var(--primary-color);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.2rem;
-        flex-shrink: 0;
-    }
-
-    .skill-info {
-        flex: 1;
-    }
-
-    .skill-name {
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 0.5rem;
-        display: block;
-    }
-
-    .skill-bar {
-        height: 6px;
-        background: var(--border-color);
-        border-radius: 3px;
-        overflow: hidden;
-    }
-
-    .skill-progress {
-        height: 100%;
-        background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-        border-radius: 3px;
-        transition: width 2s ease-out;
-        width: 0;
-    }
-
-    /* Certifications Showcase */
-    .certifications-showcase {
-        padding: 5rem 0;
-    }
-
-    .certifications-slider {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-
-    .cert-item {
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 16px;
-        padding: 2rem;
-        text-align: center;
-        transition: var(--transition);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .cert-item::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
-        transition: var(--transition);
-    }
-
-    .cert-item:hover::before {
-        left: 100%;
-    }
-
-    .cert-item:hover {
-        border-color: var(--primary-color);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-    }
-
-    .cert-badge {
-        width: 80px;
-        height: 80px;
-        background: var(--primary-color);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 2rem;
-        margin: 0 auto 1.5rem;
-    }
-
-    .cert-name {
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 0.5rem;
-    }
-
-    .cert-issuer {
-        color: var(--text-secondary);
-        margin-bottom: 0.5rem;
-    }
-
-    .cert-date {
-        font-size: 0.9rem;
-        color: var(--primary-color);
-        font-weight: 600;
-        margin-bottom: 1rem;
-        display: block;
-    }
-
-    .cert-skills {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .cert-skills span {
-        padding: 0.25rem 0.75rem;
-        background: var(--bg-secondary);
-        border: 1px solid var(--border-color);
-        border-radius: 15px;
-        font-size: 0.8rem;
-        color: var(--text-secondary);
-    }
-
-    /* Stats Section */
-    .stats-section {
-        padding: 5rem 0;
-        background: var(--bg-secondary);
-    }
-
-    .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
-    }
-
-    .stat-card {
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: 16px;
-        padding: 2rem;
-        text-align: center;
-        transition: var(--transition);
-    }
-
-    .stat-card:hover {
-        border-color: var(--primary-color);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-    }
-
-    .stat-icon {
-        width: 60px;
-        height: 60px;
-        background: var(--primary-color);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.5rem;
-        margin: 0 auto 1rem;
-    }
-
-    .stat-number {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        margin-bottom: 0.5rem;
-        display: block;
-    }
-
-    .stat-label {
-        color: var(--text-secondary);
-        font-weight: 500;
-    }
-
-    /* About CTA */
-    .about-cta {
-        padding: 5rem 0;
-        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-        color: white;
-        text-align: center;
-    }
-
-    .cta-title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
-
-    .cta-description {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        opacity: 0.9;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .cta-buttons {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .about-cta .btn-primary-large {
-        padding: 1rem 2rem;
-        border: 2px solid white;
-        border-radius: 12px;
-        background: white;
-        color: var(--primary-color);
-    }
-
-    .about-cta .btn-primary:hover {
-        background: rgba(255, 255, 255, 0.9);
-    }
-
-    .about-cta .btn-outline-large {
-        padding: 1rem 2rem;
-        border-radius: 12px;    
-        border-color: white;
-        color: white;
-    }
-
-    .about-cta .btn-outline-large:hover {
-        background: white;
-        color: var(--primary-color);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-        .about-hero-content {
-            grid-template-columns: 1fr;
-            text-align: center;
-            gap: 2rem;
-        }
-
-        .about-title {
-            font-size: 2.5rem;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .about-title {
-            font-size: 2rem;
-        }
-
-        .timeline {
-            margin-left: 1rem;
-        }
-
-        .timeline::before {
-            left: 15px;
-        }
-
-        .timeline-item {
-            padding-left: 60px;
-        }
-
-        .timeline-marker {
-            left: 0;
-            width: 25px;
-            height: 25px;
-        }
-
-        .education-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .skills-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .stats-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .cta-buttons {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .about-title {
-            font-size: 1.8rem;
-        }
-
-        .cta-title {
-            font-size: 2rem;
-        }
-
-        .stats-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
-
-<!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    // Initialize AOS
-    AOS.init({
-        duration: 800,
-        easing: 'ease-out',
-        once: true,
-        offset: 100
-    });
-
-    // Typing animation for roles
-    const typingRoles = document.querySelector('.typing-roles');
-    const roles = ['Full-Stack Developer', 'Cybersecurity Expert', 'Cloud Architect', 'Problem Solver'];
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    function typeRole() {
-        const currentRole = roles[roleIndex];
-        
-        if (isDeleting) {
-            typingRoles.textContent = currentRole.substring(0, charIndex - 1);
-            charIndex--;
-            
-            if (charIndex === 0) {
-                isDeleting = false;
-                roleIndex = (roleIndex + 1) % roles.length;
-                setTimeout(typeRole, 500);
-                return;
-            }
-        } else {
-            typingRoles.textContent = currentRole.substring(0, charIndex + 1);
-            charIndex++;
-            
-            if (charIndex === currentRole.length) {
-                isDeleting = true;
-                setTimeout(typeRole, 2000);
-                return;
-            }
-        }
-        
-        setTimeout(typeRole, isDeleting ? 100 : 150);
-    }
-
-    // Start typing animation
-    setTimeout(typeRole, 1000);
-
-    // Animate skill progress bars
-    const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px'
-    };
-
-    const skillObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const progress = entry.target.dataset.progress;
-                entry.target.style.width = progress + '%';
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.skill-progress').forEach(progress => {
-        skillObserver.observe(progress);
-    });
-
-    // Animate counter numbers
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const target = parseInt(entry.target.dataset.count);
-                let current = 0;
-                const increment = target / 50;
-                
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        entry.target.textContent = target + (target === 500 ? '+' : '');
-                        clearInterval(timer);
-                    } else {
-                        entry.target.textContent = Math.floor(current) + (target === 500 ? '+' : '');
-                    }
-                }, 40);
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.stat-number').forEach(number => {
-        counterObserver.observe(number);
-    });
-
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Add stagger animation to timeline items
-    document.querySelectorAll('.timeline-item').forEach((item, index) => {
-        item.setAttribute('data-aos-delay', index * 200);
-    });
-
-    // Add floating animation to badges with random delays
-    document.querySelectorAll('.badge-item').forEach((badge, index) => {
-        badge.style.animationDelay = (index * 0.5 + Math.random()) + 's';
-    });
+<?php
+$pageTitle = "About Harish N — PHP Developer & Backend Engineer | CodesByHarish";
+$metaDescription = "Learn about Harish N — Full-Stack PHP Developer from Bengaluru. BCA (8.41 CGPA) + MCA Cyber Security (Jain University). Experience at SolarBee, PyGenicArc, CodeClause, VaultofCodes, Tata Group.";
+include 'includes/header.php';
+?>
+
+<!-- ===== JSON-LD: BreadcrumbList ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://codesbyharish.in"},
+    {"@type":"ListItem","position":2,"name":"About","item":"https://codesbyharish.in/about.php"}
+  ]
+}
 </script>
+
+<main class="main-content" aria-label="About Harish N">
+
+  <!-- ===== ABOUT HERO ===== -->
+  <section class="about-hero section" aria-labelledby="about-heading">
+    <div class="container" style="max-width:800px;">
+      <img src="assets/heronobg.png" alt="Harish N — Full-Stack PHP Developer" class="about-avatar reveal" width="120"
+        height="120">
+      <div class="section-label reveal delay-1" style="justify-content:center;">About Me</div>
+      <h1 class="section-title reveal delay-2" id="about-heading" style="margin-bottom:1rem;">
+        Harish N — <span class="text-gradient">PHP Developer</span>
+      </h1>
+      <p class="section-desc reveal delay-3" style="margin:0 auto 1.5rem; max-width:640px; text-align:center;">
+        Software Developer with a strong focus on secure web application development, backend engineering, and
+        database-driven systems. I build PHP and JavaScript-based applications, design clean REST APIs, and deploy
+        solutions on live servers — with OWASP best practices baked in throughout.
+      </p>
+      <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;" class="reveal delay-4">
+        <a href="contact.php" class="btn btn-primary">
+          <i class="fas fa-handshake" aria-hidden="true"></i> Hire Me
+        </a>
+        <a href="https://github.com/harishprp370" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="mailto:harishprp370@gmail.com" class="btn btn-ghost">
+          <i class="fas fa-envelope" aria-hidden="true"></i> Email Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE TIMELINE ===== -->
+  <section class="section" style="background: var(--col-surface);" aria-labelledby="exp-heading">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">Career</div>
+        <h2 class="section-title reveal delay-1" id="exp-heading">Work Experience</h2>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- SolarBee -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">Nov 2024 — Present · Full-time</div>
+          <h3 class="timeline-role">Software Developer</h3>
+          <p class="timeline-company">
+            <i class="fas fa-building" style="font-size:0.8em;" aria-hidden="true"></i> SolarBee · Hybrid, India
+          </p>
+          <ul class="timeline-bullets" aria-label="Responsibilities">
+            <li>Developed internal modules using PHP, MySQL, JS, and Bootstrap for operational workflows.</li>
+            <li>Implemented secure login flows with role-based access control (RBAC) and session security.</li>
+            <li>Performed code optimization and debugged API & DB-related issues across the application stack.</li>
+            <li>Conducted vulnerability checks: input sanitization, CSRF protection, SQLi prevention.</li>
+            <li>Trained non-technical staff on system workflows and secure usage practices.</li>
+          </ul>
+          <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">JavaScript</span><span
+              class="chip">Bootstrap</span><span class="chip">RBAC</span><span class="chip">CSRF</span>
+          </div>
+        </article>
+
+        <!-- VaultofCodes -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">Sep 2024 — Oct 2024 · Internship · Remote</div>
+          <h3 class="timeline-role">AI & Prompt Engineering Intern</h3>
+          <p class="timeline-company">
+            <i class="fas fa-building" style="font-size:0.8em;" aria-hidden="true"></i> VaultofCodes
+          </p>
+          <ul class="timeline-bullets" aria-label="Responsibilities">
+            <li>Designed and tested structured prompt engineering pipelines for LLM-based workflows.</li>
+            <li>Researched RAG (Retrieval-Augmented Generation) patterns for knowledge retrieval systems.</li>
+          </ul>
+          <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="chip">Prompt Engineering</span><span class="chip">AI</span><span class="chip">LLMs</span>
+          </div>
+        </article>
+
+        <!-- PyGenicArc -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">Apr 2024 — Jun 2024 · Internship</div>
+          <h3 class="timeline-role">Web Development Intern</h3>
+          <p class="timeline-company">
+            <i class="fas fa-building" style="font-size:0.8em;" aria-hidden="true"></i> PyGenicArc
+          </p>
+          <ul class="timeline-bullets" aria-label="Responsibilities">
+            <li>Built <strong>QwikLearn</strong> — a full-stack e-learning web app supporting quizzes, video lectures,
+              and progress tracking.</li>
+            <li>Integrated Firebase services for real-time data synchronization and authentication.</li>
+            <li>Developed dynamic front-end modules with JavaScript and Bootstrap for responsive UX.</li>
+            <li>Documented the complete project and published to GitHub with full README.</li>
+          </ul>
+          <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="chip">PHP</span><span class="chip">Firebase</span><span class="chip">JavaScript</span><span
+              class="chip">Bootstrap</span><span class="chip">MySQL</span>
+          </div>
+        </article>
+
+        <!-- Tata Group -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">Jan 2024 — Feb 2024 · Job Simulation · Remote</div>
+          <h3 class="timeline-role">Cybersecurity Analyst</h3>
+          <p class="timeline-company">
+            <i class="fas fa-building" style="font-size:0.8em;" aria-hidden="true"></i> Tata Group / Forage
+          </p>
+          <ul class="timeline-bullets" aria-label="Responsibilities">
+            <li>Conducted Identity & Access Management (IAM) fundamentals and strategy assessments.</li>
+            <li>Designed custom IAM solution architectures and evaluated platform integration approaches.</li>
+            <li>Applied risk management and incident management frameworks in simulated enterprise environments.</li>
+          </ul>
+          <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="chip">IAM</span><span class="chip">Risk Management</span><span class="chip">Incident
+              Management</span>
+          </div>
+        </article>
+
+        <!-- CodeClause -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">Aug 2023 — Sep 2023 · Internship · Remote</div>
+          <h3 class="timeline-role">Python Development Intern</h3>
+          <p class="timeline-company">
+            <i class="fas fa-building" style="font-size:0.8em;" aria-hidden="true"></i> CodeClause
+          </p>
+          <ul class="timeline-bullets" aria-label="Responsibilities">
+            <li>Built interactive Python desktop tools: Voice Assistant, Music Player, and Plagiarism Checker.</li>
+            <li>Used tkinter for GUI development and speech recognition libraries for voice I/O.</li>
+            <li>Published all projects to GitHub (<a href="https://github.com/harishprp370" target="_blank"
+                rel="noopener noreferrer" style="color:var(--brand-primary);">@harishprp370</a>).</li>
+          </ul>
+          <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem;">
+            <span class="chip">Python</span><span class="chip">Tkinter</span><span class="chip">Machine
+              Learning</span><span class="chip">GitHub</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" aria-labelledby="edu-heading">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">Education</div>
+        <h2 class="section-title reveal delay-1" id="edu-heading">Academic Background</h2>
+      </div>
+      <div class="edu-grid">
+        <article class="edu-card pop-construct card-glow">
+          <div class="edu-icon">🎓</div>
+          <h3 class="edu-degree">MCA — Master of Computer Applications</h3>
+          <p class="edu-uni">Jain University, Bengaluru</p>
+          <p class="edu-period">May 2025 — Aug 2027 (Pursuing)</p>
+          <div class="chip" style="margin-bottom:0.5rem;">Specialization: Cyber Security</div>
+          <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.5;">Pursuing advanced coursework in
+            network security, cryptography, ethical hacking, and secure software development alongside core computer
+            science subjects.</p>
+        </article>
+        <article class="edu-card pop-construct card-glow pop-stagger-2">
+          <div class="edu-icon">📚</div>
+          <h3 class="edu-degree">BCA — Bachelor of Computer Applications</h3>
+          <p class="edu-uni">BITS Hi-Tech College, Chitradurga (Davangere University)</p>
+          <p class="edu-period">Oct 2021 — Sep 2024</p>
+          <span class="edu-grade">⭐ CGPA: 8.41</span>
+          <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.5;margin-top:0.75rem;">Strong foundation
+            in computer science, programming (C, Java, Python), web development, databases, networking, and information
+            systems.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS MATRIX ===== -->
+  <section class="section" style="background: var(--col-surface);" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal">Technical Skills</div>
+        <h2 class="section-title reveal delay-1" id="skills-heading">Skills Matrix</h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Backend -->
+        <div class="skill-group pop-construct">
+          <p class="skill-group-title">Backend & Web</p>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="devicon-php-plain" style="color:#7b7fb5;font-size:0.9rem;"></i> PHP</span>
+            <span class="skill-tag"><i class="devicon-mysql-plain" style="color:#4479a1;font-size:0.9rem;"></i>
+              MySQL</span>
+            <span class="skill-tag"><i class="devicon-laravel-plain" style="color:#f55247;font-size:0.9rem;"></i>
+              Laravel</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">MVC Pattern</span>
+            <span class="skill-tag">JWT Auth</span>
+            <span class="skill-tag">Session Security</span>
+            <span class="skill-tag">cPanel</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-group pop-construct pop-stagger-2">
+          <p class="skill-group-title">Frontend</p>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="devicon-html5-plain" style="color:#e34f26;font-size:0.9rem;"></i>
+              HTML5</span>
+            <span class="skill-tag"><i class="devicon-css3-plain" style="color:#1572b6;font-size:0.9rem;"></i>
+              CSS3</span>
+            <span class="skill-tag"><i class="devicon-javascript-plain" style="color:#f7df1e;font-size:0.9rem;"></i>
+              JavaScript</span>
+            <span class="skill-tag"><i class="devicon-bootstrap-plain" style="color:#7952b3;font-size:0.9rem;"></i>
+              Bootstrap</span>
+            <span class="skill-tag">Fetch API</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="skill-group pop-construct pop-stagger-3">
+          <p class="skill-group-title">Security Concepts</p>
+          <div class="skill-tags">
+            <span class="skill-tag">OWASP Top 10</span>
+            <span class="skill-tag">SQL Injection Prevention</span>
+            <span class="skill-tag">CSRF Protection</span>
+            <span class="skill-tag">XSS Filtering</span>
+            <span class="skill-tag">Input Validation</span>
+            <span class="skill-tag">Auth Security</span>
+            <span class="skill-tag">IAM Basics</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-group pop-construct pop-stagger-4">
+          <p class="skill-group-title">Tools & Other</p>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="devicon-git-plain" style="color:#f05032;font-size:0.9rem;"></i> Git</span>
+            <span class="skill-tag"><i class="devicon-github-original" style="font-size:0.9rem;"></i> GitHub</span>
+            <span class="skill-tag"><i class="devicon-linux-plain" style="font-size:0.9rem;"></i> Linux</span>
+            <span class="skill-tag"><i class="devicon-python-plain" style="color:#3776ab;font-size:0.9rem;"></i>
+              Python</span>
+            <span class="skill-tag"><i class="devicon-firebase-plain" style="color:#ffca28;font-size:0.9rem;"></i>
+              Firebase</span>
+            <span class="skill-tag">PhpMyAdmin</span>
+            <span class="skill-tag">Error Logging</span>
+            <span class="skill-tag">TCP/IP · DNS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHILOSOPHY ===== -->
+  <section class="section" aria-labelledby="philosophy-heading">
+    <div class="container" style="max-width:800px;">
+      <div class="section-label reveal" style="justify-content:center;">Philosophy</div>
+      <h2 class="section-title reveal delay-1" id="philosophy-heading" style="text-align:center;margin-bottom:1.5rem;">
+        How I Approach Engineering
+      </h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;" class="reveal delay-2">
+        <?php
+        $principles = [
+          ['icon' => 'fas fa-lock', 'title' => 'Security First', 'desc' => 'OWASP-aware development with input validation, CSRF protection, and secure session management in every project.'],
+          ['icon' => 'fas fa-file-code', 'title' => 'Clean Code', 'desc' => 'Readable, well-documented PHP following MVC patterns. Code that future-you — or any developer — can maintain.'],
+          ['icon' => 'fas fa-tachometer-alt', 'title' => 'Performance Matters', 'desc' => 'Optimized SQL queries, efficient API design, and server configurations that keep response times fast.'],
+        ];
+        foreach ($principles as $p): ?>
+          <div class="card-glass" style="padding:1.5rem;text-align:center;">
+            <div
+              style="width:48px;height:48px;border-radius:var(--radius-md);background:var(--brand-primary-dim);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--brand-primary);margin:0 auto 1rem;">
+              <i class="<?= $p['icon'] ?>" aria-hidden="true"></i>
+            </div>
+            <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;"><?= $p['title'] ?></h3>
+            <p style="font-size:0.83rem;color:var(--text-secondary);line-height:1.6;"><?= $p['desc'] ?></p>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <?php include 'includes/footer.php'; ?>

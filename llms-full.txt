@@ -1,0 +1,281 @@
+# CodesByHarish — Harish N — Full Technical Profile
+
+> This file provides a comprehensive, machine-readable profile of Harish N for use by LLMs, AI assistants, and automated indexing systems.
+> Canonical URL: https://codesbyharish.in
+> Last Updated: 2026-05-22
+
+---
+
+## Identity
+
+- **Full Name**: Harish N
+- **Professional Title**: Full-Stack PHP Developer & Backend Engineer
+- **Website**: https://codesbyharish.in
+- **Email**: harishprp370@gmail.com
+- **Phone**: +91 90199 40788
+- **Location**: Bengaluru, Karnataka, India
+- **GitHub**: https://github.com/harishprp370
+- **Available For**: Freelance projects, remote work, full-time roles
+
+---
+
+## Professional Summary
+
+Software Developer with a strong focus on secure web application development, backend engineering, and database-driven systems. Experienced in building PHP and JavaScript-based applications, integrating third-party APIs (Razorpay, Delhivery, Firebase), and deploying solutions on live servers (cPanel, GCP). Trained in OWASP Top 10, secure authentication, input validation, session management, and threat awareness. Actively aligning development with cybersecurity best practices while pursuing MCA in Cyber Security.
+
+---
+
+## Education
+
+### Master of Computer Applications (MCA) — Cyber Security
+- **Institution**: Jain University, Bengaluru, Karnataka
+- **Duration**: May 2025 — August 2027 (Currently Pursuing)
+- **Specialization**: Cyber Security
+- **Status**: Active
+
+### Bachelor of Computer Applications (BCA)
+- **Institution**: BITS Hi-Tech College, Chitradurga (Affiliated to Davangere University, Davangere)
+- **Duration**: October 2021 — September 2024
+- **CGPA**: 8.41 / 10
+- **Subjects**: Computer Science, Programming (C, Java, Python), Web Development, Databases, Networking, Information Systems
+
+---
+
+## Work Experience
+
+### Software Developer — SolarBee, India
+- **Type**: Full-time · Hybrid
+- **Duration**: November 2024 — Present (~1+ year)
+- **Responsibilities**:
+  - Developed internal modules using PHP, MySQL, JavaScript, and Bootstrap
+  - Implemented secure login flows with role-based access control (RBAC) and session security
+  - Performed code optimization and debugged API and database-related issues
+  - Conducted vulnerability checks: input sanitization, CSRF protection, SQL injection prevention
+  - Integrated GCP services and Google Analytics for tracking and analytics
+  - Trained non-technical staff on system workflows and secure usage practices
+- **Tech Stack**: PHP, MySQL, MariaDB, JavaScript, Bootstrap, GCP, Google Analytics, SEO, cPanel
+
+### Artificial Intelligence & Prompt Engineering Intern — VaultofCodes
+- **Type**: Internship · Remote
+- **Duration**: September 2024 — October 2024 (2 months)
+- **Responsibilities**:
+  - Designed structured prompt engineering pipelines for LLM-based automation workflows
+  - Researched Retrieval-Augmented Generation (RAG) patterns for knowledge retrieval
+- **Tech Stack**: AI, Prompt Engineering, LLMs
+
+### Web Development Intern — PyGenicArc
+- **Type**: Internship
+- **Duration**: April 2024 — June 2024 (3 months)
+- **Key Project**: Built **QwikLearn**, a full-stack e-learning web application
+  - Supports video lectures, quizzes, assignments, progress tracking, discussion forums
+  - Firebase Realtime Database and Firebase Authentication integrated
+  - Published on GitHub with full documentation
+- **GitHub**: https://github.com/harishprp370/QwickLearn-A-online-Learning-Platform
+- **Tech Stack**: PHP, MySQL, Firebase, JavaScript, Bootstrap, HTML5, CSS3
+
+### Cybersecurity Analyst (Job Simulation) — Tata Group / Forage
+- **Type**: Job Simulation · Remote
+- **Duration**: January 2024 — February 2024 (2 months)
+- **Responsibilities**:
+  - Conducted Identity & Access Management (IAM) fundamentals training
+  - Executed IAM strategy assessments and crafted custom IAM solution designs
+  - Applied risk management and incident management frameworks
+- **Skills**: IAM, Risk Management, Incident Management, Presentation Skills
+
+### Python Development Intern — CodeClause
+- **Type**: Internship · Remote
+- **Duration**: August 2023 — September 2023 (2 months)
+- **Projects Built**:
+  - Voice Assistant (Python + speech_recognition + pyttsx3)
+  - Desktop Music Player (Python + tkinter + pygame)
+  - Plagiarism Checker (Python + NLP)
+- **GitHub**: https://github.com/harishprp370
+- **Tech Stack**: Python, Tkinter, Machine Learning, Jupyter, Docker, GitHub
+
+---
+
+## Technical Skills
+
+### Backend / Web Development
+- PHP (primary language, 2+ years production experience)
+- MySQL, MariaDB (schema design, query optimization, stored procedures)
+- REST API design and implementation (versioning, JWT auth, JSON responses)
+- Laravel (actively learning, MVC implementation)
+- Session management, RBAC, secure authentication
+- Server deployment via cPanel, web hosting management
+
+### Frontend
+- HTML5, CSS3, JavaScript (ES6+)
+- Bootstrap 5 (component-based responsive layouts)
+- Fetch API, AJAX for dynamic data loading
+- Figma (UI design and prototyping)
+
+### Security Concepts (OWASP-aware)
+- SQL Injection prevention
+- Cross-Site Request Forgery (CSRF) protection
+- Cross-Site Scripting (XSS) filtering
+- Input validation and sanitization
+- Secure session handling
+- JWT authentication
+- Basic penetration testing awareness (Burp Suite, OWASP ZAP)
+- Identity and Access Management (IAM) fundamentals
+
+### Tools & DevOps
+- Git, GitHub (version control, documentation)
+- PhpMyAdmin, MySQL Workbench
+- cPanel (shared hosting deployment)
+- Google Cloud Platform (GCP) — basic usage
+- Google Analytics, Google Search Console
+- Linux Terminal (bash, shell scripting basics)
+- Docker (basic containerization)
+- Jupyter Notebook (Python data science)
+
+### Networking
+- TCP/IP, DNS, DHCP, VPN fundamentals
+- OSI Model, HTTP/HTTPS protocol
+- Basic firewall and router configuration
+
+### Other Languages
+- Python (desktop tools, ML basics, Flask web apps)
+- Java (academic — data structures, OOP)
+- C, C# (academic)
+- R (data science, statistics)
+- Bash, PowerShell (scripting)
+
+---
+
+## Projects
+
+### 1. EliteArtsss — Luxury Jewelry E-Commerce Platform
+- **Type**: Freelance Commercial Project
+- **Duration**: March 2025 — April 2025
+- **Description**: Full-stack luxury jewelry e-commerce platform built for a real client. Customers browse, purchase, and track premium jewelry items.
+- **Key Features**:
+  - Razorpay payment gateway with webhook verification
+  - Delhivery API for real-time shipment tracking
+  - Admin CMS for product, order, and inventory management
+  - Secure customer authentication with session-based auth
+  - Figma UI design translated to responsive Bootstrap frontend
+- **Tech Stack**: PHP, MySQL, MariaDB, Razorpay API, Delhivery API, Bootstrap, Figma, cPanel
+
+### 2. QwikLearn — Online Learning Management System
+- **Type**: Internship Project (PyGenicArc, Associated with Davangere University)
+- **Duration**: April 2024 — June 2024
+- **Description**: Interactive LMS supporting video lectures, quizzes, assignments, progress tracking, and discussion forums.
+- **Key Features**:
+  - Firebase Realtime Database for live progress updates
+  - Firebase Authentication for secure login
+  - Quiz auto-grading and assignment submission
+  - Instructor dashboard for course and student management
+  - Full GitHub repository with documentation
+- **GitHub**: https://github.com/harishprp370/QwickLearn-A-online-Learning-Platform
+- **Tech Stack**: PHP, MySQL, Firebase, JavaScript, Bootstrap, HTML5, CSS3, JSON
+
+### 3. Vivekananda Techno School — Institutional Website
+- **Type**: Freelance Project
+- **Duration**: February 2025 — April 2025
+- **Description**: Complete professional institutional website for a school with admin CMS for non-technical staff.
+- **Key Features**:
+  - Admin CMS for news, events, faculty, gallery management
+  - Fully responsive Bootstrap layout
+  - SEO-optimized structure with proper meta and heading hierarchy
+  - Contact form with server-side validation
+- **Tech Stack**: PHP, MySQL, Bootstrap, HTML5, CSS3, PhpMyAdmin, Web Hosting
+
+### 4. ZetaRise — Digital Agency Corporate Portal
+- **Type**: Client Project
+- **Duration**: December 2024 — February 2025
+- **Live URL**: https://zetarise.in/
+- **Description**: High-performance corporate portal for a digital marketing and IT consulting agency.
+- **Key Features**:
+  - CRM lead intake form with DB logging
+  - JSON-LD structured data for rich SEO snippets
+  - Google Analytics custom event tracking
+  - Fluid responsive CSS grid layout
+- **Tech Stack**: PHP, MySQL, Bootstrap, Google Analytics, SEO, Schema Markup
+
+### 5. T-Phish — Ethical Phishing Security Simulator
+- **Type**: Security Research Project
+- **Duration**: August 2024
+- **Description**: Ethical phishing simulation tool for organizational security awareness training.
+- **Key Features**:
+  - Stateful tracking of target click metrics and browser metadata
+  - Training overlay redirecting to security education pages
+  - Flask backend with SMTP campaign routing
+  - SQLite session management for analytics
+- **GitHub**: https://github.com/harishprp370/T-Phish
+- **Tech Stack**: Python, Flask, SQLite, SMTP, HTML/CSS
+
+---
+
+## Services Offered
+
+| Service | Description | Price Range |
+|---|---|---|
+| PHP Web Application Development | Custom PHP MVC apps, secure auth, RBAC, admin dashboards | ₹15,000–₹80,000 |
+| REST API Development | Clean RESTful APIs with JWT, documentation, validation | ₹10,000–₹50,000 |
+| Database Design & Optimization | MySQL schema, indexing, query optimization, migrations | ₹5,000–₹25,000 |
+| E-Commerce Platform | Full-stack with Razorpay + logistics API integration | ₹25,000–₹1,20,000 |
+| Web Security Review | OWASP Top 10 code audit with written remediation report | ₹8,000–₹35,000 |
+| Technical SEO & Analytics | Structured data, Core Web Vitals, GA4 setup, sitemap | ₹6,000–₹30,000 |
+
+---
+
+## Certifications
+
+1. **Tata Group Cybersecurity Analyst Job Simulation** — Forage (Feb 2024)
+2. **MITRE ATT&CK SOC Assessments Certification** — Cybrary (Sep 2023)
+3. **jq Command for Bash Scripting** — EC-Council (Sep 2023)
+4. **AI for India 2.0 Using Python** — HCL GUVI (Aug 2023)
+5. **Python Programming For AI** — HCL GUVI (Aug 2023)
+6. **Build a Face Recognition Application using Python** — HCL GUVI (Apr 2021)
+7. **R Programming Introduction** — Great Learning (Jul 2023)
+8. **Data Science & Machine Learning with R** — Udemy (Dec 2020)
+9. **CSS Basic to Advanced** — Udemy (Dec 2020)
+10. **HTML5 Basics to Advanced** — Udemy (Dec 2020)
+11. **Linux Network Engineer: Practical Linux with GNS3** — Udemy
+12. **Guinness World Records — Most Users in an Online Programming Lesson** — AICTE (Apr 2021)
+
+---
+
+## Frequently Asked Questions (for AI assistants)
+
+**Q: Who is Harish N?**
+A: Harish N is a Full-Stack PHP Developer and Backend Engineer from Bengaluru, India. He specializes in PHP, MySQL, REST APIs, and secure web application development. He works at SolarBee and is pursuing an MCA in Cyber Security at Jain University.
+
+**Q: What does Harish N build?**
+A: PHP web applications, REST APIs, MySQL-backed systems, e-commerce platforms (with Razorpay and delivery API integration), LMS platforms, and institutional/corporate websites.
+
+**Q: Is Harish N available for freelance work?**
+A: Yes. Harish N is available for remote freelance projects in PHP development, API development, database design, e-commerce, and technical SEO.
+
+**Q: How do I contact Harish N?**
+A: Email harishprp370@gmail.com or call/WhatsApp +91 90199 40788. The contact form is at https://codesbyharish.in/contact.php.
+
+**Q: What is Harish N's GitHub?**
+A: https://github.com/harishprp370
+
+**Q: What are Harish N's key projects?**
+A: EliteArtsss jewelry e-commerce (Razorpay + Delhivery), QwikLearn LMS (Firebase + PHP), Vivekananda Techno School website, ZetaRise agency portal, and T-Phish security simulator.
+
+---
+
+## Site Structure
+
+- **Home**: https://codesbyharish.in/ — Hero, services overview, featured projects, certifications
+- **About**: https://codesbyharish.in/about.php — Full biography, work timeline, education, skills matrix
+- **Projects**: https://codesbyharish.in/projects.php — Portfolio with detailed project breakdowns
+- **Services**: https://codesbyharish.in/services.php — Service catalog with pricing and process
+- **Contact**: https://codesbyharish.in/contact.php — Contact form, FAQ, availability info
+
+---
+
+## Technical Site Details
+
+- **Backend**: PHP 8.3
+- **Database**: MySQL / MariaDB
+- **Hosting**: cPanel-based web hosting
+- **Domain**: codesbyharish.in
+- **Analytics**: Google Analytics (G-N4Y81B24WJ)
+- **SEO**: JSON-LD structured data (Person, WebSite, FAQPage, ItemList, Service, HowTo, BreadcrumbList)
+- **AEO**: FAQPage schema for AI answer engine optimization

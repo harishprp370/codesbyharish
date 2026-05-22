@@ -3,3 +3,4 @@ config.php
 show.php
 /private/
 *.sql
+.DS_Store

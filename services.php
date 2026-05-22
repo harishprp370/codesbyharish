@@ -1,286 +1,236 @@
-<?php 
-$pageTitle = "Services - CodesByHarish";
-$metaDescription = "Explore the professional services offered by CodesByHarish, including web development, IT consultation, mobile app development, UI/UX design, cybersecurity, cloud solutions, and SEO & analytics. Contact for tailored solutions.";
-include 'includes/header.php'; ?>
+<?php
+$pageTitle = "Services — Hire PHP Developer | Backend Engineering | CodesByHarish";
+$metaDescription = "Hire Harish N for PHP web development, REST API engineering, MySQL database design, e-commerce platforms, and technical SEO in Bengaluru or remote. Transparent pricing.";
+include 'includes/header.php';
+?>
 
-<main class="main-content">
-    <!-- Services Hero Section -->
-    <section class="services-hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Professional <span class="highlight">Services</span></h1>
-                <p class="hero-description">
-                    Empower your business with modern web development, IT consultation, mobile apps, UI/UX design, cybersecurity, cloud solutions, and more. Get expert solutions tailored for your needs. For pricing, please <a href="contact.php">contact me</a>.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Cards -->
-    <section class="services-list">
-        <div class="container">
-            <div class="services-grid">
-                <!-- Web Development -->
-                <div class="service-card" data-service="webdev">
-                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" alt="Web Development" class="service-img">
-                    <h3 class="service-title">Web Development</h3>
-                    <p class="service-desc">Custom websites, portals, and web apps using PHP, Laravel, Python, JS, and more. Responsive, secure, and scalable.</p>
-                    <button class="btn btn-outline view-details" data-service="webdev">View Details</button>
-                </div>
-                <!-- IT Consultation -->
-                <div class="service-card" data-service="consult">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop" alt="IT Consultation" class="service-img">
-                    <h3 class="service-title">IT Consultation</h3>
-                    <p class="service-desc">Expert advice for digital transformation, tech stack selection, cloud migration, and business automation.</p>
-                    <button class="btn btn-outline view-details" data-service="consult">View Details</button>
-                </div>
-                <!-- Mobile Apps -->
-                <div class="service-card" data-service="mobile">
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=600&h=400&fit=crop" alt="Mobile Apps" class="service-img">
-                    <h3 class="service-title">Mobile App Development</h3>
-                    <p class="service-desc">Cross-platform mobile apps for iOS & Android using Flutter and native technologies. Seamless user experience.</p>
-                    <button class="btn btn-outline view-details" data-service="mobile">View Details</button>
-                </div>
-                <!-- UI/UX Design -->
-                <div class="service-card" data-service="uiux">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop" alt="UI/UX Design" class="service-img">
-                    <h3 class="service-title">UI/UX Design</h3>
-                    <p class="service-desc">Modern, attractive interfaces and user journeys for web and mobile. Wireframes, prototypes, and branding.</p>
-                    <button class="btn btn-outline view-details" data-service="uiux">View Details</button>
-                </div>
-                <!-- Cybersecurity -->
-                <div class="service-card" data-service="security">
-                    <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop" alt="Cybersecurity" class="service-img">
-                    <h3 class="service-title">Cybersecurity</h3>
-                    <p class="service-desc">Vulnerability assessment, penetration testing, IAM, SOC, and security architecture for robust protection.</p>
-                    <button class="btn btn-outline view-details" data-service="security">View Details</button>
-                </div>
-                <!-- Cloud Solutions -->
-                <div class="service-card" data-service="cloud">
-                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=600&h=400&fit=crop" alt="Cloud Solutions" class="service-img">
-                    <h3 class="service-title">Cloud Solutions</h3>
-                    <p class="service-desc">Google Cloud, AWS, Azure setup, migration, DevOps, CI/CD, and scalable infrastructure for your business.</p>
-                    <button class="btn btn-outline view-details" data-service="cloud">View Details</button>
-                </div>
-                <!-- SEO & Analytics -->
-                <div class="service-card" data-service="seo">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="SEO & Analytics" class="service-img">
-                    <h3 class="service-title">SEO & Analytics</h3>
-                    <p class="service-desc">Technical SEO, Google Analytics, performance monitoring, and optimization for better online visibility.</p>
-                    <button class="btn btn-outline view-details" data-service="seo">View Details</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Detail Modal -->
-    <div class="modal" id="serviceModal">
-        <div class="modal-content">
-            <button class="modal-close" id="closeServiceModal">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-body" id="serviceModalBody">
-                <!-- Dynamic content -->
-            </div>
-        </div>
-    </div>
-</main>
-
-<style>
-/* ...existing code for main-content, container, btn, modal, etc... */
-.main-content { margin-top: 70px; }
-.services-hero { padding: 5rem 0 2rem; background: var(--bg-secondary); text-align: center; }
-.hero-title { font-size: 2.5rem; font-weight: 700; }
-.highlight { color: var(--primary-color); }
-.hero-description { font-size: 1.2rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; margin-top: 1rem; }
-.services-list { padding: 2rem 0 5rem; }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-.service-card { background: var(--bg-primary); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem 1rem 1.5rem; text-align: center; box-shadow: var(--shadow); transition: var(--transition); position: relative; }
-.service-card:hover { border-color: var(--primary-color); transform: translateY(-5px); box-shadow: 0 8px 25px rgba(37,99,235,0.1); }
-.service-img { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1.2rem; }
-.service-title { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; }
-.service-desc { color: var(--text-secondary); margin-bottom: 1.2rem; font-size: 1rem; }
-.btn-outline { border: 2px solid var(--primary-color); color: var(--primary-color); background: none; border-radius: 8px; padding: 0.7rem 1.2rem; cursor: pointer; transition: var(--transition); }
-.btn-outline:hover { background: var(--primary-color); color: white; }
-.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 10000; opacity: 0; visibility: hidden; transition: var(--transition); }
-.modal.active { opacity: 1; visibility: visible; }
-.modal-content { 
-    background: var(--bg-primary); 
-    border-radius: 16px; 
-    max-width: 600px; 
-    width: 90%; 
-    max-height: 80vh; 
-    overflow-y: auto; 
-    position: relative; 
-    padding: 2rem; 
-    color: var(--text-primary); /* Ensure modal text uses primary text color */
+<!-- JSON-LD: Service Offering -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Web Development & Backend Engineering",
+  "provider": {
+    "@type": "Person",
+    "name": "Harish N",
+    "url": "https://codesbyharish.in"
+  },
+  "areaServed": {"@type": "Country", "name": "India"},
+  "description": "Full-Stack PHP Development, REST API Engineering, MySQL Database Design, E-Commerce Platforms, and Technical SEO services by Harish N."
 }
-.modal-close { position: absolute; top: 1rem; right: 1rem; width: 40px; height: 40px; background: var(--primary-color); color: white; border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-.modal-body { 
-    padding-top: 1rem; 
-    color: var(--text-primary); /* Ensure modal body text uses primary text color */
-}
-[data-theme="dark"] .modal-content,
-[data-theme="dark"] .modal-body {
-    color: var(--text-primary); /* Force text color in dark mode */
-}
-[data-theme="dark"] .modal-content a,
-[data-theme="dark"] .modal-body a {
-    color: var(--primary-color); /* Make links visible in dark mode */
-}
-@media (max-width: 768px) {
-    .services-grid { grid-template-columns: 1fr; }
-    .service-img { height: 140px; }
-    .modal-content { padding: 1rem; }
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-</style>
-
-<script>
-// Service details data
-const serviceDetails = {
-    webdev: {
-        title: 'Web Development',
-        image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
-        desc: 'Custom websites, portals, and web apps using PHP, Laravel, Python, JS, and more. Responsive, secure, and scalable.',
-        features: [
-            'Full-stack web applications',
-            'API development & integration',
-            'Database design & optimization',
-            'Responsive & mobile-friendly',
-            'E-commerce solutions',
-            'Admin dashboards'
-        ],
-        price: '₹15,000 - ₹80,000+ (Contact for exact quote)',
-        cta: 'Contact for a free consultation & quote.'
-    },
-    consult: {
-        title: 'IT Consultation',
-        image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop',
-        desc: 'Expert advice for digital transformation, tech stack selection, cloud migration, and business automation.',
-        features: [
-            'Digital strategy planning',
-            'Cloud migration guidance',
-            'Tech stack selection',
-            'Business process automation',
-            'Security & compliance advice'
-        ],
-        price: '₹2,000 - ₹10,000 per session',
-        cta: 'Contact to discuss your business needs.'
-    },
-    mobile: {
-        title: 'Mobile App Development',
-        image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=600&h=400&fit=crop',
-        desc: 'Cross-platform mobile apps for iOS & Android using Flutter and native technologies. Seamless user experience.',
-        features: [
-            'iOS & Android apps',
-            'Progressive web apps',
-            'App store optimization',
-            'Push notifications',
-            'User authentication',
-            'API integration'
-        ],
-        price: '₹25,000 - ₹1,00,000+ (Contact for details)',
-        cta: 'Let\'s build your mobile app together.'
-    },
-    uiux: {
-        title: 'UI/UX Design',
-        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&h=400&fit=crop',
-        desc: 'Modern, attractive interfaces and user journeys for web and mobile. Wireframes, prototypes, and branding.',
-        features: [
-            'Wireframes & prototypes',
-            'Branding & visual identity',
-            'User journey mapping',
-            'Accessibility design',
-            'Responsive layouts'
-        ],
-        price: '₹8,000 - ₹40,000+ (Contact for quote)',
-        cta: 'Get a stunning design for your product.'
-    },
-    security: {
-        title: 'Cybersecurity',
-        image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop',
-        desc: 'Vulnerability assessment, penetration testing, IAM, SOC, and security architecture for robust protection.',
-        features: [
-            'Security audits & assessments',
-            'Penetration testing',
-            'IAM implementation',
-            'SOC analysis & monitoring',
-            'Compliance consulting'
-        ],
-        price: '₹10,000 - ₹60,000+ (Contact for scope)',
-        cta: 'Secure your business with expert help.'
-    },
-    cloud: {
-        title: 'Cloud Solutions',
-        image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=600&h=400&fit=crop',
-        desc: 'Google Cloud, AWS, Azure setup, migration, DevOps, CI/CD, and scalable infrastructure for your business.',
-        features: [
-            'Cloud migration & hosting',
-            'DevOps & CI/CD pipelines',
-            'Performance optimization',
-            'Backup & disaster recovery',
-            'Serverless architecture'
-        ],
-        price: '₹12,000 - ₹70,000+ (Contact for details)',
-        cta: 'Move to the cloud with confidence.'
-    },
-    seo: {
-        title: 'SEO & Analytics',
-        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
-        desc: 'Technical SEO, Google Analytics, performance monitoring, and optimization for better online visibility.',
-        features: [
-            'Technical SEO audit',
-            'Google Analytics setup',
-            'Performance monitoring',
-            'Content optimization',
-            'Keyword research'
-        ],
-        price: '₹5,000 - ₹25,000+ (Contact for package)',
-        cta: 'Boost your online presence today.'
-    }
-};
-
-// Modal logic
-const modal = document.getElementById('serviceModal');
-const modalBody = document.getElementById('serviceModalBody');
-const closeModal = document.getElementById('closeServiceModal');
-document.querySelectorAll('.view-details').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const service = btn.dataset.service;
-        const details = serviceDetails[service];
-        if (details) {
-            modalBody.innerHTML = `
-                <h2>${details.title}</h2>
-                <img src="${details.image}" alt="${details.title}" style="width:100%;border-radius:12px;margin-bottom:1rem;">
-                <p style="margin-bottom:1.2rem;">${details.desc}</p>
-                <h3>Key Features</h3>
-                <ul style="text-align:left;margin-bottom:1.2rem;">
-                    ${details.features.map(f => `<li>✓ ${f}</li>`).join('')}
-                </ul>
-                <div style="margin-bottom:1.2rem;"><strong>Price Range:</strong> ${details.price}</div>
-                <div style="margin-bottom:1.2rem;"><strong>Note:</strong> For exact pricing and requirements, please <a href="contact.php">contact me</a>.</div>
-                <a href="contact.php" class="btn btn-primary" style="margin-top:1rem;">Contact Now</a>
-            `;
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    });
-});
-closeModal.addEventListener('click', () => {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-});
-modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-});
 </script>
+
+<!-- JSON-LD: HowTo (Process) for AEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Hire Harish N for a Web Project",
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Brief","text":"Share your project requirements, timeline, and technical stack via the contact form."},
+    {"@type":"HowToStep","position":2,"name":"Scope","text":"Receive a detailed project scope document, architecture plan, and cost estimate within 24 hours."},
+    {"@type":"HowToStep","position":3,"name":"Build","text":"Collaborative development with regular milestone updates, code reviews, and documentation."},
+    {"@type":"HowToStep","position":4,"name":"Deploy","text":"Deployment to live server with testing, bug fixing, handover documentation, and post-launch support."}
+  ]
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://codesbyharish.in"},
+    {"@type":"ListItem","position":2,"name":"Services","item":"https://codesbyharish.in/services.php"}
+  ]
+}
+</script>
+
+<main class="main-content" aria-label="Services offered by Harish N">
+
+  <!-- Hero -->
+  <section class="services-page-hero" aria-labelledby="services-heading">
+    <div class="container" style="max-width:800px;">
+      <div class="section-label reveal" style="justify-content:center;">Available for Hire</div>
+      <h1 class="section-title reveal delay-1" id="services-heading">
+        PHP & Backend <span class="text-gradient">Engineering Services</span>
+      </h1>
+      <p class="section-desc reveal delay-2" style="margin:1rem auto 2rem;text-align:center;">
+        End-to-end web development from database schema to deployment. Clean code, documented APIs, and security-conscious engineering — for freelance clients and startups.
+      </p>
+      <div style="display:flex;gap:0.75rem;justify-content:center;" class="reveal delay-3">
+        <div class="status-badge">
+          <div class="status-dot"></div>
+          Currently Available
+        </div>
+        <span class="chip chip-warm">
+          <i class="fas fa-clock" aria-hidden="true"></i> &lt; 24hr Response
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Catalog -->
+  <section class="section-sm" id="webdev" aria-labelledby="catalog-heading">
+    <div class="container">
+      <h2 class="sr-only" id="catalog-heading">Service Catalog</h2>
+      <div class="services-catalog">
+        <?php
+        $services = [
+          [
+            'icon' => 'fas fa-server',
+            'name' => 'PHP Web Application Development',
+            'desc' => 'Custom PHP applications built with MVC architecture, secure authentication, role-based access control, and thorough code documentation. Scalable and maintainable from day one.',
+            'features' => ['Custom CMS & admin dashboards', 'Secure login & RBAC', 'CRUD operations & session management', 'Code documentation & handover'],
+            'price' => '₹15,000 — ₹80,000',
+            'id' => 'webdev',
+          ],
+          [
+            'icon' => 'fas fa-plug',
+            'name' => 'REST API Development',
+            'desc' => 'Clean, versioned RESTful APIs in PHP with JWT authentication, input validation, rate limiting, and proper error responses. Full Postman/Swagger documentation on delivery.',
+            'features' => ['JWT / session-based auth', 'Input validation & sanitization', 'Structured JSON responses', 'API documentation (Postman)'],
+            'price' => '₹10,000 — ₹50,000',
+            'id' => 'api',
+          ],
+          [
+            'icon' => 'fas fa-database',
+            'name' => 'Database Design & Optimization',
+            'desc' => 'Relational database schema design in MySQL/MariaDB with normalization, indexing strategies, stored procedures, and query optimization for fast performance at scale.',
+            'features' => ['Schema design & normalization', 'Index optimization', 'Query performance tuning', 'Migration scripts & backups'],
+            'price' => '₹5,000 — ₹25,000',
+            'id' => 'backend',
+          ],
+          [
+            'icon' => 'fas fa-shopping-cart',
+            'name' => 'E-Commerce Platform Development',
+            'desc' => 'Full-stack e-commerce with Razorpay payment integration, real-time shipping tracking (Delhivery/Shiprocket API), product management, and admin order processing dashboard.',
+            'features' => ['Razorpay payment integration', 'Logistics API (Delhivery)', 'Product & inventory management', 'Order tracking & admin panel'],
+            'price' => '₹25,000 — ₹1,20,000',
+            'id' => 'ecom',
+          ],
+          [
+            'icon' => 'fas fa-shield-alt',
+            'name' => 'Web Security Review',
+            'desc' => 'Code review and vulnerability assessment for existing PHP applications against OWASP Top 10. Includes SQL injection, XSS, CSRF, authentication flaws, and session security analysis.',
+            'features' => ['OWASP Top 10 audit', 'SQL injection & XSS testing', 'CSRF & auth flow review', 'Written remediation report'],
+            'price' => '₹8,000 — ₹35,000',
+            'id' => 'security',
+          ],
+          [
+            'icon' => 'fas fa-chart-line',
+            'name' => 'Technical SEO & Analytics',
+            'desc' => 'Implement structured data (JSON-LD), optimize Core Web Vitals, configure Google Analytics & Search Console, rebuild robots.txt/sitemap.xml, and fix crawl-blocking issues.',
+            'features' => ['JSON-LD structured data', 'Core Web Vitals optimization', 'Google Analytics setup', 'Sitemap & robots.txt'],
+            'price' => '₹6,000 — ₹30,000',
+            'id' => 'seo',
+          ],
+        ];
+        foreach ($services as $s): ?>
+          <article class="service-card card-glow reveal" id="<?= $s['id'] ?>">
+            <div class="service-card-icon" aria-hidden="true">
+              <i class="<?= $s['icon'] ?>"></i>
+            </div>
+            <h2 class="service-card-name"><?= $s['name'] ?></h2>
+            <p class="service-card-desc"><?= $s['desc'] ?></p>
+
+            <ul style="margin-bottom:1.5rem;display:flex;flex-direction:column;gap:0.4rem;">
+              <?php foreach ($s['features'] as $f): ?>
+                <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.83rem;color:var(--text-secondary);">
+                  <i class="fas fa-check" style="color:var(--brand-primary);font-size:0.7rem;" aria-hidden="true"></i>
+                  <?= $f ?>
+                </li>
+              <?php endforeach; ?>
+            </ul>
+
+            <div class="service-price">
+              <i class="fas fa-tag" aria-hidden="true"></i>
+              Starting from <?= $s['price'] ?>
+            </div>
+            <a href="contact.php?service=<?= $s['id'] ?>" class="btn btn-outline" style="border-radius:var(--radius-md);">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Get a Quote
+            </a>
+          </article>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Process Steps -->
+  <section class="section-sm" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <div class="section-label reveal" style="justify-content:center;">How It Works</div>
+        <h2 class="section-title reveal delay-1" id="process-heading">From Brief to Delivery</h2>
+      </div>
+      <div class="process-grid">
+        <?php
+        $steps = [
+          ['num'=>'01','title'=>'Brief','desc'=>'Share your requirements, tech stack preferences, timeline, and budget via the contact form or email.'],
+          ['num'=>'02','title'=>'Scope & Quote','desc'=>'I send a detailed scope document with architecture plan, milestones, and cost estimate within 24 hours.'],
+          ['num'=>'03','title'=>'Build','desc'=>'Collaborative development with regular milestone demos, code reviews, and daily/weekly updates via GitHub.'],
+          ['num'=>'04','title'=>'Deploy & Handover','desc'=>'Live deployment, end-to-end testing, documentation, and 2 weeks post-launch support included.'],
+        ];
+        foreach ($steps as $i => $step): ?>
+          <div class="process-step reveal" style="transition-delay:<?= $i * 0.1 ?>s;">
+            <div class="process-num" aria-hidden="true"><?= $step['num'] ?></div>
+            <h3 class="process-title"><?= $step['title'] ?></h3>
+            <p class="process-desc"><?= $step['desc'] ?></p>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Why Work With Me -->
+  <section class="section-sm" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <div class="section-label reveal" style="justify-content:center;">Why Choose Me</div>
+        <h2 class="section-title reveal delay-1" id="why-heading">Developer You Can Trust</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;" class="reveal delay-2">
+        <?php
+        $whys = [
+          ['icon'=>'fas fa-code','title'=>'Clean, Documented Code','desc'=>'Every project is delivered with clean, commented PHP and a proper README. Handovers are smooth.'],
+          ['icon'=>'fas fa-clock','title'=>'Deadline-Focused','desc'=>'Milestones tracked on GitHub. You always know exactly what\'s done and what\'s next.'],
+          ['icon'=>'fas fa-lock','title'=>'Security-Aware','desc'=>'OWASP-aware development. SQL injection prevention, CSRF protection, and safe auth — standard practice.'],
+          ['icon'=>'fas fa-comments','title'=>'Clear Communication','desc'=>'Daily or weekly updates. I respond to messages within a few hours during business hours.'],
+        ];
+        foreach ($whys as $w): ?>
+          <div class="card-glass" style="padding:1.5rem;display:flex;flex-direction:column;gap:0.75rem;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--brand-primary-dim);display:flex;align-items:center;justify-content:center;color:var(--brand-primary);font-size:1.1rem;" aria-hidden="true">
+              <i class="<?= $w['icon'] ?>"></i>
+            </div>
+            <h3 style="font-size:0.95rem;font-weight:700;color:var(--text-primary);"><?= $w['title'] ?></h3>
+            <p style="font-size:0.85rem;color:var(--text-secondary);line-height:1.6;"><?= $w['desc'] ?></p>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding:4rem 0;background:var(--col-surface);text-align:center;" aria-labelledby="services-cta-heading">
+    <div class="container" style="max-width:650px;">
+      <h2 class="section-title reveal" id="services-cta-heading" style="margin-bottom:1rem;">Ready to Start?</h2>
+      <p class="section-desc reveal delay-1" style="margin:0 auto 2rem;">Fill out the contact form with your project details and I'll get back to you with a quote within 24 hours.</p>
+      <div class="reveal delay-2">
+        <a href="contact.php" class="btn btn-primary" style="font-size:1rem;padding:0.9rem 2rem;">
+          <i class="fas fa-paper-plane" aria-hidden="true"></i>
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <?php include 'includes/footer.php'; ?>

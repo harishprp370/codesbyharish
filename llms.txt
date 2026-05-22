@@ -1,0 +1,49 @@
+# CodesByHarish — Harish N
+
+> Full-Stack PHP Developer & Backend Engineer based in Bengaluru, India.
+> Portfolio: https://codesbyharish.in
+
+## About
+
+Harish N is a Software Developer specializing in secure PHP web application development, REST API engineering, and MySQL database-driven systems. He is currently a Software Developer at SolarBee (Nov 2024–Present) and pursuing an MCA in Cyber Security at Jain University, Bengaluru (2025–2027). He holds a BCA from BITS Hi-Tech College (Davangere University) with a CGPA of 8.41.
+
+## Core Skills
+
+- **Backend**: PHP, MySQL, MariaDB, REST APIs, Laravel (learning), MVC architecture
+- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap, Fetch API
+- **Security**: OWASP Top 10, CSRF, SQL injection prevention, XSS filtering, JWT auth
+- **Tools**: Git, GitHub, PhpMyAdmin, cPanel, Linux Terminal
+- **Other**: Python, Firebase, Docker (basics), Google Analytics, SEO
+
+## Services
+
+- PHP Web Application Development (₹15,000–₹80,000)
+- REST API Development (₹10,000–₹50,000)
+- Database Design & Optimization (₹5,000–₹25,000)
+- E-Commerce Platform Development with Razorpay/Delhivery (₹25,000–₹1,20,000)
+- Web Security Review / OWASP Audit (₹8,000–₹35,000)
+- Technical SEO & Analytics (₹6,000–₹30,000)
+
+## Projects
+
+- **EliteArtsss Jewelry E-Commerce** — Razorpay + Delhivery API, PHP/MySQL, Figma UI (Mar–Apr 2025)
+- **QwickLearn LMS** — Firebase, PHP, MySQL, quizzes + progress tracking (Apr–Jun 2024)
+- **Vivekananda Techno School Website** — PHP/MySQL institutional site with admin CMS (Feb–Apr 2025)
+- **ZetaRise Agency Portal** — CRM, SEO, analytics (Dec 2024–Feb 2025) — https://zetarise.in/
+- **T-Phish Security Simulator** — Python/Flask ethical phishing trainer (Aug 2024)
+
+## Contact
+
+- Email: harishprp370@gmail.com
+- Phone: +91 90199 40788
+- GitHub: https://github.com/harishprp370
+- Website: https://codesbyharish.in
+- Location: Bengaluru, Karnataka, India
+
+## Pages
+
+- [Home](https://codesbyharish.in/)
+- [About](https://codesbyharish.in/about.php)
+- [Projects](https://codesbyharish.in/projects.php)
+- [Services](https://codesbyharish.in/services.php)
+- [Contact](https://codesbyharish.in/contact.php)
