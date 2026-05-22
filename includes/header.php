@@ -186,10 +186,11 @@
         <li role="none" style="--i:2;"><a href="about.php" class="nav-link" role="menuitem"><i class="fas fa-user-astronaut" aria-hidden="true"></i>About</a></li>
         <li role="none" style="--i:3;"><a href="projects.php" class="nav-link" role="menuitem"><i class="fas fa-code-branch" aria-hidden="true"></i>Projects</a></li>
         <li role="none" style="--i:4;"><a href="services.php" class="nav-link" role="menuitem"><i class="fas fa-server" aria-hidden="true"></i>Services</a></li>
-        <li role="none" style="--i:5;"><a href="contact.php" class="nav-link" role="menuitem"><i class="fas fa-paper-plane" aria-hidden="true"></i>Contact</a></li>
+        <li role="none" style="--i:5;"><a href="sandbox.php" class="nav-link" role="menuitem"><i class="fas fa-shield-halved" aria-hidden="true"></i>Security Lab</a></li>
+        <li role="none" style="--i:6;"><a href="contact.php" class="nav-link" role="menuitem"><i class="fas fa-paper-plane" aria-hidden="true"></i>Contact</a></li>
         
         <!-- Mobile Drawer System Status (Hidden on Desktop) -->
-        <li class="mobile-menu-status" style="--i:6;" aria-hidden="true">
+        <li class="mobile-menu-status" style="--i:7;" aria-hidden="true">
           <div class="status-indicator">
             <span class="status-dot-pulse"></span>
             <span class="status-label">System Status: Online</span>
